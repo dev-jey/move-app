@@ -1,0 +1,121 @@
+<div fxLayout="column" *ngIf="routes.length > 0">
+  <div fxlayout="row" class="notification-text" fxFlex="100%" fxLayoutAlign="start stretch">
+    Hi {{ user.firstName }}, you have {{ routes.length }} New Request{{ routes.length > 1 ? 's' : '' }}
+  </div>
+</div>
+
+<div
+  *ngIf="routes.length > 0"
+  fxlayout="row wrap" fxLayout.xs="column"
+  fxLayout.sm="column" fxLayoutAlign="space-around start"
+  class="app-routes-container">
+
+  <div class="routes-grid" fxFlex="45%" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between center">
+    <div
+      *ngFor="let route of routes; let idx = index"
+      [className]="isRouteActive(idx) ? 'active route-box' : 'route-box'"
+      (click)="onClickRouteBox(idx, route)"
+      [style.background-image]="'url(' + route.routeImageUrl + ')'">
+      <div
+        class="transparent-background"
+        fxLayout="column"
+        fxLayoutAlign="space-evenly center">
+        <span class="route-name" [title]="route.busStop.address|customTitlecase">
+          {{ route.busStop.address|customTitlecase }}
+        </span>
+        <span class="route-distance">{{ route.busStopDistance }}{{ route.busStopDistance ? 'km' : '' }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxFlex="55%" fxLayout.lt-md="column" fxLayoutAlign="center center" class="left-column">
+    <mat-card class="details-card">
+
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab class="pending-routes" label="Request">
+            <img class="map-image"
+                 [src]="getCurrentRoute().routeImageUrl ||
+                  'https://via.placeholder.com/500?text=We could not load the map for this route'"
+                 [alt]="getCurrentRoute().busStop.address" />
+          </mat-tab>
+          <mat-tab label="View Details">
+              <div class=view-details-wrapper>
+                <mat-grid-list cols="2" rowHeight="2:1">
+                    <mat-grid-tile>
+                      <div class='view-details details-label'>
+                        Fellow Name
+                      </div>
+                      <div class='view-details details-value'>
+                          {{getCurrentRoute().engagement.fellow.name}}
+                      </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class='view-details details-label'>
+                            Manager Name
+                          </div>
+                          <div class='view-details details-value'>
+                              {{getCurrentRoute().manager.name}}
+                          </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class='view-details details-label'>
+                            Partner Name
+                          </div>
+                          <div class='view-details details-value'>
+                              {{getCurrentRoute().engagement.partner.name}}
+                          </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class='view-details details-label'>
+                            Partner Duration
+                          </div>
+                          <div class='view-details details-value'>
+                              {{getCurrentRoute().engagement.startDate | date: 'dd-MM-yy'}}
+                              <span class='text-in-value'> to </span>
+                              {{getCurrentRoute().engagement.endDate | date: 'dd-MM-yy'}}
+                          </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class='view-details details-label'>
+                            Working Hours
+                          </div>
+                          <div class='view-details details-value'
+                          [innerHTML]="getCurrentRoute().engagement.workHours | convertTime"
+                          >
+                          </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class='view-details details-label'>
+                            Distance from Bustop to Home
+                          </div>
+                          <div class='view-details details-value'>
+                              {{getCurrentRoute().busStopDistance}} km
+                          </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+              </div>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+
+      <mat-card-footer>
+        <div class="footer-text">
+          <img matCardAvatar [src]="requesterData?.picture || '/assets/images/default_avatar.png'" alt={{getCurrentRoute().engagement.fellow.name}}>
+          <span>{{getCurrentRoute().engagement.fellow.name}} is requesting a route - {{ getCurrentRoute().busStop.address }}</span>
+        </div>
+        <mat-card-actions>
+          <button (click)="approve()"  class="accept-button">ACCEPT</button>
+          <button (click)="decline()" class="reject-button">REJECT</button>
+        </mat-card-actions>
+      </mat-card-footer>
+
+    </mat-card>
+  </div>
+
+</div>
+
+<app-empty-page *ngIf="routes.length === 0" [text]="'No new route requests.'"></app-empty-page>
+
+<div class="bottom-image"></div>
+

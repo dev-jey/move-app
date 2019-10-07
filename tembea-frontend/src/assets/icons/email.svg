@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web-App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cabs-&gt;-Pending-Requests" transform="translate(-331.000000, -170.000000)">
+            <g id="Group-2" transform="translate(306.000000, 116.000000)">
+                <g id="Cab-card">
+                    <g id="Reg" transform="translate(25.000000, 54.000000)">
+                        <g id="ic_reg">
+                            <g id="Email">
+                                <circle id="Oval" fill-opacity="0.471325861" fill="#E0E8EA" cx="12" cy="12" r="12"></circle>
+                                <g id="Group" transform="translate(7.000000, 8.000000)" fill="#B9C5D1">
+                                    <path d="M10.89,1.41 L10.89,6.99 C10.89,7.59 10.41,8.07 9.81,8.07 L1.08,8.07 C0.48,8.07 -2.90434343e-13,7.59 -2.90434343e-13,6.99 L-2.90434343e-13,1.41 L5.28,4.95 C5.4,5.01 5.52,5.01 5.61,4.95 L10.89,1.41 Z M1.08,1.15463195e-14 L9.81,1.15463195e-14 C10.29,1.15463195e-14 10.71,0.33 10.86,0.75 L5.46,4.35 L0.06,0.75 C0.18,0.33 0.6,1.15463195e-14 1.08,1.15463195e-14 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

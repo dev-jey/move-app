@@ -1,0 +1,230 @@
+.cover {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  font-weight: 200;
+  .logo {
+    height: 60px;
+    margin: 100px auto auto 5%;
+    img {
+      height: 100%;
+    }
+  }
+  .home-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    .image-wrapper {
+      width: 1056px;
+      height: 768px;
+      margin: auto 0 auto auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .home-text {
+    background-color: rgba(255,255,255,.48);
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    transform: translateY(-50%);
+    border: none;
+    box-shadow: 0 1px 80px 35px rgba(255,255,255,.5);
+    line-height: 66px;
+    .mantra {
+      p {
+        color: #3A3D40;
+        font-size: 3rem;
+        width: 448px;
+        font-weight: 300;
+        margin: auto;
+        box-sizing: border-box;
+      }
+    }
+    .sub-mantra {
+      margin-bottom: 60px;
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #808FA3;
+      }
+    }
+    .login-button {
+      margin-bottom: 4px;
+      padding: 0;
+      button {
+      	height: 51px;
+      	width: 270px;
+        color: #000000;
+        font-size: 1.125rem;
+      	border: 1px solid #E9EFF4;
+        padding: 0;
+        outline: none;
+        margin: 0 0 2px 0;
+      	border-radius: 8px;
+      	background-color: #FFFFFF;
+      	box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        vertical-align: middle;
+        .google-login-icon {
+          background-image: url("/assets/images/icons/google-login-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin: auto 10px -2px auto;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          margin: 2px 0 0 0;
+          box-shadow: 0 0 2px 0 rgba(83,89,98,0);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .logo {
+      margin: 30px auto;
+      text-align: center;
+    }
+    .home-text {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px 0;
+    .logo {
+      margin: 10px auto 20px auto;
+      height: 40px;
+    }
+    .home-image {
+      position: static;
+      height: unset;
+      .image-wrapper {
+        width: 100%;
+        height: unset;
+      }
+    }
+    .home-text {
+      background-color: white;
+      position: static;
+      width: 100%;
+      padding: 10px 0 0;
+      transform: translateY(-30%);
+      box-shadow: -3px 0 30px 20px white;
+      .mantra {
+        padding: 0 20px;
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 2.5rem;
+        }
+      }
+      .subMantra {
+        margin-bottom: 60px;
+        text-align: center;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .login-button {
+        text-align: center;
+        button {
+          font-size: 17px;
+          height: 40px;
+          width: 230px;
+          .google-login-icon {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .mantra {
+      p {
+        font-size: 2.3rem;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .home-text {
+      .subMantra {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 345px) {
+    .mantra {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 340px) {
+    padding: 20px 0;
+    .logo {
+      margin: 10px auto 20px auto;
+      height: 40px;
+    }
+    .home-image {
+      position: static;
+      height: unset;
+      .image-wrapper {
+        width: 100%;
+        height: unset;
+      }
+    }
+    .home-text {
+      .mantra {
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      .subMantra {
+        p {
+          font-size: 1rem;
+        }
+      }
+      button {
+        font-size: 15px;
+        width: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-height: 740px) {
+    .home-text {
+      transform: translateY(-40%);
+    }
+  }
+  @media screen and (max-height: 700px) {
+    .home-text {
+      transform: translateY(-50%);
+    }
+  }
+}
+/* very large screen devices */
+@media all and (min-width: 1400px) {
+  .cover{
+    .home-text {
+      top: 520px;
+    }
+  }
+}
+

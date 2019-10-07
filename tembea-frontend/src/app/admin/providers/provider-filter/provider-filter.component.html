@@ -1,0 +1,13 @@
+<div class="top-filter">
+  <div class="filter-item">
+    <p class="title">Which Provider ?</p>
+    <div class="filter-selector-wrapper">
+      <button class="filter-selector-button active">
+        <i class="filter-icon ic-filter-location"></i>
+        <select class="" [(ngModel)]="selectedProvider" (ngModelChange)="onProviderSelected($event)">
+          <option *ngFor='let provider of providers' [ngValue]="provider">{{provider.name}}</option>
+        </select>
+      </button>
+    </div>
+  </div>
+</div>

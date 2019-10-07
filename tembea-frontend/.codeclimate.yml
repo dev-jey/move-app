@@ -1,0 +1,4 @@
+exclude_patterns:
+  - '**/database/*'
+  - '**/*.spec.ts'
+  - '**/__mocks__/'

@@ -1,0 +1,22 @@
+<div class="navigation-wrapper flex">
+  <div [ngClass]="['nav-buttons', 'flex-' + position]">
+    <button [hidden]="shouldHideBtn('prev')" (click)="changePage(currPage - 1 ,'prev')"
+            class="arrow-icon-button flex-right">
+      <span class="arrow-icon-back"></span>
+    </button>
+    <button [hidden]="shouldHideBtn('prev-ellipse')" (click)="changePage(null, 'prev-ellipse')" class="page-number">...
+    </button>
+
+    <div *ngFor='let hPage of btnGroup'>
+      <button (click)="changePage(hPage, null)"
+              [ngClass]="{'page-number': true, selected: hPage === currPage}"> {{ hPage }} </button>
+    </div>
+
+    <button [hidden]="shouldHideBtn('next-ellipse')" (click)="changePage(null, 'next-ellipse')" class="page-number">...
+    </button>
+
+    <button [hidden]="shouldHideBtn('next')" (click)="changePage(currPage + 1 ,'next')" class="arrow-icon-button">
+      <span class="arrow-icon"></span>
+    </button>
+  </div>
+</div>

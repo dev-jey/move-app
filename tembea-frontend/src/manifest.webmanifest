@@ -1,0 +1,16 @@
+{
+  "name": "tembea-frontend",
+  "short_name": "tembea",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/images/brand/logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

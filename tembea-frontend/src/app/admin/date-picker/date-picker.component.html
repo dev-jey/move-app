@@ -1,0 +1,9 @@
+<div class="custom-date-picker">
+  <input matInput [matDatepicker]="picker" placeholder="3 November 2017" (dateInput)="update($event)">
+  <input type="text" name="select_date" (click)="picker.open()" [(ngModel)]="model.selectedDate" placeholder="{{placeholder}}">
+  <mat-datepicker-toggle matSuffix [for]="picker">
+  </mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</div>
+
+

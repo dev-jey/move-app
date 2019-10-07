@@ -1,0 +1,71 @@
+.mat-tab-label {
+  min-width: 25px !important;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.mat-tab-label.mat-tab-label-active {
+  min-width: 25px !important;
+  padding: 5px;
+  font-size: 14px;
+  color: #3359DB;
+  font-weight: 700;
+}
+
+
+.mat-ink-bar {
+  color: #3359DB;
+  min-width: 25px !important;
+  background-color: rgb(202, 209, 230)  !important;
+}
+
+.mat-tab-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styles common to the tabs pages on trips section */
+.trip-itinerary-table {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: auto;
+  display: block;
+}
+
+.trip-table-head {
+  color: #808FA3;
+  text-align: left;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.trip-buttons-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.trip-table-head {
+  p {
+    font-size: 14px;
+  }
+}
+
+.trip-table-body  {
+  cursor: pointer;
+  .mat-grid-tile {
+    font-size: 14px;
+    text-align: left;
+    justify-content: start;
+  }
+  text-align: left;
+}
+
+.mat-grid-tile, .table-row-item, 
+.trip-table-head.mad-grid-tile, .trip-table-head  {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

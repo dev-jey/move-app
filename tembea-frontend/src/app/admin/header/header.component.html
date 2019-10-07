@@ -1,0 +1,84 @@
+
+<mat-toolbar class="app-toolbar">
+  <mat-toolbar-row>
+    <button
+      (click)="toggleSideNav()"
+      id="menuToggle"
+      mat-icon-button
+      fxHide.gt-sm
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div *ngIf="!headerTitle" class="tool-bar-items">
+      <span class="header-title"> Welcome {{ user.firstName }}</span>
+      <!-- visible on xs-devices -->
+      <img class="upic" fxHide.gt-xs [src]="user.picture" alt="profile picture" />
+    </div>
+
+    <div class="tool-bar-items">
+      <span
+        *ngIf="headerTitle === 'Welcome'; else showTitleOnly"
+        class="header-title"
+      >
+        {{ headerTitle }}, {{ user.firstName }}
+      </span>
+      <ng-template #showTitleOnly>
+        <div class="header">
+          <span class="title">
+            {{ headerTitle }}
+          </span>
+          <span *ngIf="badgeSize >= 0" class="badge tooltips" data-title="Hypertext Markup Language">
+            {{badgeSize}}
+          <ng-template [ngIf]="badgeSize == 1" [ngIfElse]="moreThanOne">
+            <span *ngIf="headerTitle==='Route Requests'"> There is currently {{badgeSize}} route request in {{headerTitle}}</span>
+            <span *ngIf="headerTitle === 'Routes Inventory'">There is currently {{badgeSize}} route in the {{headerTitle}}</span>
+            <span *ngIf="headerTitle.includes('Trips')">There is currently {{badgeSize}} trip in {{tooltipTitle}}</span>
+            <span *ngIf="headerTitle.includes('Vehicles')">This provider currently has {{badgeSize}} vehicle</span>
+            <span *ngIf="headerTitle === 'Providers'">There is currently {{badgeSize}} provider in display</span>
+            <span *ngIf="headerTitle === 'Fellows'">There is currently {{badgeSize}} Fellow {{tooltipTitle}}</span>
+            <span *ngIf="headerTitle === 'Airport Transfers'">There has been {{badgeSize}} airport transfer so far</span>
+            <span *ngIf="headerTitle === 'Embassy Visits'">There has been {{badgeSize}} embassy visit so far</span>
+            <span *ngIf="headerTitle.includes('Trip History')">This fellow has taken {{badgeSize}} trip so far</span>
+            <span *ngIf="headerTitle === 'Pending Trips'">There is currently {{badgeSize}} pending trip</span>
+          </ng-template>
+          <ng-template #moreThanOne>
+            <span *ngIf="headerTitle === 'Routes Inventory'">There are currently {{badgeSize}} routes in the {{headerTitle}}</span>
+            <span *ngIf="headerTitle === 'Route Requests'">There are currently {{badgeSize}} route requests in the {{headerTitle}}</span>
+            <span *ngIf="headerTitle.includes('Trips')">There are currently {{badgeSize}} trips in {{tooltipTitle}}</span>
+            <span *ngIf="headerTitle.includes('Vehicles')">This provider currently has {{badgeSize}} vehicles</span>
+            <span *ngIf="headerTitle === 'Providers'">There are currently {{badgeSize}} {{headerTitle}} in display</span>
+            <span *ngIf="headerTitle === 'Fellows'">There are currently {{badgeSize}} Fellows {{tooltipTitle}}</span>
+            <span *ngIf="headerTitle === 'Airport Transfers'">There have been {{badgeSize}} airport transfers so far</span>
+            <span *ngIf="headerTitle === 'Embassy Visits'">There have been {{badgeSize}} embassy visits so far</span>
+            <span *ngIf="headerTitle.includes('Trip History')">This fellow has taken {{badgeSize}} trips so far</span>
+            <span *ngIf="headerTitle === 'Pending Trips'">There are currently {{badgeSize}} pending trips</span>
+          </ng-template>
+          </span>
+          <span *ngIf="actionButton" class="action-button-wrapper">
+            <button class="header-action-button" (click)="handleAction()">{{actionButton}}</button>
+          </span>
+        </div>
+      </ng-template>
+      <!-- visible on xs-devices -->
+      <img class="upic" fxHide.gt-xs [src]="user.picture" alt="profile picture" />
+    </div>
+
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+      <div class="tool-bar-button">
+        <button id="drop-down-button" [matMenuTriggerFor]="dropDown" class="action-button">
+          <img class="upic" [src]="user.picture" alt="profile picture" />
+          <span class="too-bar-username">{{ user.firstName }} {{ user.lastName }}</span>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+
+        <mat-menu #dropDown="matMenu" class="toolbar-dropdown">
+          <button class="action-button logout" (click)="showLogoutModal()">
+            Logout
+            <span class="right-arrow-icon-wrapper"></span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

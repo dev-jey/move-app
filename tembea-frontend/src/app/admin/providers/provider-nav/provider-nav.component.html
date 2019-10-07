@@ -1,0 +1,20 @@
+<div>
+  <div class="loader" *ngIf="isLoading === true"></div>
+
+  <app-provider-filter></app-provider-filter>
+
+  <mat-tab-group (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="Vehicles">
+      <app-cabs
+        [providerTabRequestType]="'providerVehicles'"
+        (cabsInfoEventEmitter)="updateProviderHeader($event)"
+      ></app-cabs>
+    </mat-tab>
+    <mat-tab label="Drivers">
+      <app-drivers
+        [providerTabRequestType]="'providerDrivers'"
+        (driverInfoEventEmitter)="updateProviderHeader($event)"
+      ></app-drivers>
+    </mat-tab>
+  </mat-tab-group>
+</div>

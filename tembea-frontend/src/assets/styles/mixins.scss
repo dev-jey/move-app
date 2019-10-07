@@ -1,0 +1,23 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin input-button-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+}
+
+@mixin increment-decrement-buttons {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  margin: auto;
+}

@@ -1,0 +1,93 @@
+<div>
+  <div class="loader" *ngIf="isLoading === true"></div>
+
+  <div class="buttons-wrapper flex routes-table">
+    <div class="search-section">
+      <input type="text" class="search-term-area" placeholder="Search Routes"
+             (keyup)="searchTerm$.next($event.target.value)">
+      <button type="submit" class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div *ngIf="routes.length > 0" class="flex-right">
+      <app-export-view [tableName]="'routes'" [sort]="sort">
+      </app-export-view>
+    </div>
+  </div>
+  <div *ngIf="routes.length === 0 && !isLoading">
+    <app-empty-page [text]='displayText'></app-empty-page>
+    <div class="bottom-image"></div>
+  </div>
+  <div *ngIf="routes.length > 0">
+    <div class="routes-table-container">
+      <div class="custom-table">
+        <mat-grid-list cols="8" rowHeight="3:1" class="table-header-hover">
+          <mat-grid-tile>Route</mat-grid-tile>
+          <mat-grid-tile>Batch</mat-grid-tile>
+          <mat-grid-tile>Take-off</mat-grid-tile>
+          <mat-grid-tile>Capacity</mat-grid-tile>
+          <mat-grid-tile>In-Use</mat-grid-tile>
+          <mat-grid-tile>Vehicle</mat-grid-tile>
+          <mat-grid-tile>Status</mat-grid-tile>
+          <mat-grid-tile>Actions
+            <div class="actions-icon"></div>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list *ngFor='let route of routes; index as ind' cols="8" rowHeight="3:1" class="table-row-item">
+            <mat-grid-tile class="route-name">
+              <div class="route-name-align">{{ route.name }}</div>
+            </mat-grid-tile>
+            <mat-grid-tile>{{ route.batch }}</mat-grid-tile>
+            <mat-grid-tile>{{ route.takeOff }}</mat-grid-tile>
+            <mat-grid-tile>{{ route.capacity }}</mat-grid-tile>
+            <mat-grid-tile>{{ route.inUse }}</mat-grid-tile>
+            <mat-grid-tile>{{ route.regNumber }}</mat-grid-tile>
+
+            <mat-grid-tile *ngIf='route.status === "Active" ; else inactive'>
+              <button class="active-status-button" (click)="changeRouteStatus(route.id, 'Inactive')">
+              <span class="green-radio-wrapper">
+                <span class="green-radio">
+                </span>
+              </span>
+                <span class="status-active">active</span>
+              </button>
+            </mat-grid-tile>
+            <ng-template #inactive>
+              <mat-grid-tile>
+                <button class="inactive-status-button" (click)="changeRouteStatus(route.id, 'Active')">
+                <span class="white-radio-wrapper">
+                  <span class="white-radio">
+                  </span>
+                </span>
+                  <span class="status-inactive">inactive</span>
+                </button>
+              </mat-grid-tile>
+            </ng-template>
+            <mat-grid-tile>
+              <div class="flex">
+                <button class='edit-action-button'>
+                  <span class="edit-icon tooltip" (click)="editRoute(ind)">
+                    <span class="show-on-right">Edit<i></i></span>
+                  </span>
+                </button>
+                <button class='duplicate-action-button'>
+                  <span class="duplicate-icon tooltip" (click)="showCopyConfirmModal(route)">
+                    <span class="show-on-left">Copy<i></i></span>
+                  </span>
+                </button>
+                <button class='decline-action-button'>
+                  <span class="decline-icon tooltip" (click)='showDeleteModal(route.id)'>
+                    <span class="show-on-left">Delete<i></i></span>
+                  </span>
+                </button>
+              </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class="pagination">
+        <app-pagination *ngIf='totalItems > pageSize' [totalItems]="totalItems" (pageChange)="setPage($event)"
+                        [pageSize]="pageSize"></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>

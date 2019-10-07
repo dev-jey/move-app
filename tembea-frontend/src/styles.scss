@@ -1,0 +1,327 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/normalize';
+@import 'assets/styles/toastr';
+@import 'assets/styles/search';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import 'assets/styles/tooltips.scss';
+
+.modal-backdrop {
+  background-color: rgba($color: #4F4F4F, $alpha: 0.8);
+}
+
+.confirm-modal-panel-class {
+  .mat-dialog-container {
+    background: #F5F5F5;
+    border-radius: 11px;
+    box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+    padding: 24px 0 0;
+  }
+}
+
+.route-decline-modal-panel-class {
+  .mat-dialog-container {
+    background: #FFFFFF;
+    border-radius: 11px;
+    box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+    padding: 24px 0 0;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  font-family: "DIN Pro", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  box-shadow: none;
+}
+
+input {
+  font-family:'DIN Pro';
+}
+
+.andela-blue-color{
+  color: #3359DB !important;
+}
+.andela-yellow-color{
+  color: #FFAF30 !important;
+}
+.andela-gray-color{
+  color: #808FA3 !important;
+}
+.andela-dark-gray-color{
+  color: #4F4F4F !important;
+}
+
+.andela-blue-background{
+  background-color: #3359DB !important;
+}
+.andela-yellow-background{
+  background-color: #FFAF30 !important;
+}
+.andela-gray-background{
+  background-color: #808FA3 !important;
+}
+.andela-dark-gray-background{
+  background-color: #4F4F4F !important;
+}
+
+.toolbar-dropdown {
+  margin-top: 0;
+  box-shadow: 0 0px 0px 0 rgba(128, 143, 163, 0);
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex-center-column {
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-right {
+  margin-left: auto;
+}
+
+.flex-left {
+  margin-right: auto;
+}
+
+.flex-center {
+  margin: 0 auto;
+}
+
+.tembea-backdrop {
+  background-color: rgba($color: #808FA3, $alpha: 0.8)
+}
+
+.tembea-modal {
+  .mat-dialog-container {
+    color: #4F4F4F;
+    padding: 16px 18px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+    .close {
+      width: 29px;
+      height: 29px;
+      text-align: center;
+      border-radius: 50%;
+      border: none;
+      background-color: #E0E8EA;
+      font-size: 13px;
+      font-weight: bold;
+      color: #808FA3;
+      outline: 0;
+      cursor: pointer;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+*.app-hint {
+  text-decoration: none;
+  display: inline-block;
+  width: 25px;
+  height: 18px;
+  vertical-align: top;
+  z-index: 2;
+  position: relative;
+
+  &:hover {
+    &[data-hint]:before,
+    &[data-hint]:after {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: translate3d(0, 15px, 0);
+      transform: translate3d(0, 15px, 0);
+    }
+  }
+
+  &:before,
+  &:after {
+    top: 100%;
+    right: 50%;
+  }
+
+  &:before {
+    margin-right: -6px !important;
+  }
+
+  &:after {
+    margin-right: -11px;
+  }
+  &[data-hint]:before {
+    content: '';
+    position: absolute;
+    background: 0 0;
+    border: 6px solid transparent;
+    border-bottom-color: #383838;
+    margin-left: -5px;
+    margin-top: -12px;
+    z-index: 1000001;
+  }
+
+  &[data-hint]:after {
+    content: attr(data-hint);
+    background: #383838;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    padding: 3px 9px;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+    text-indent: 0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &[data-hint]:before,
+  &[data-hint]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.add-cab-modal-panel-class .mat-dialog-container {
+  border-radius: 11px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.add-cab-modal-panel-class .add-cab-modal-backdrop {
+  opacity: 0.8;
+  background-color: #4F4F4F;
+}
+
+.delete-cab-modal .mat-dialog-container {
+  height: 450px;
+  width: 470px;
+  border-radius: 10px;
+}
+
+.small-modal-panel-class .mat-dialog-container {
+  max-height: fit-content;
+}
+
+.custom-table {
+  width: 100%;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+  .mat-grid-list {
+    align-items: center;
+    height: 15px;
+    padding: 10px;
+  }
+  .route-name-align {
+    position: absolute;
+    left: 25px;
+  }
+  .edit-action-button,
+  .duplicate-action-button,
+  .decline-action-button,
+  .confirm-action-button {
+    display: none;
+  }
+}
+
+.custom-table:hover {
+  border-radius: 10px;
+  animation-duration: 0.25s;
+  box-shadow: 0 2px 21px -10px rgba(0, 0, 0, 0.25);
+
+  .table-header-hover {
+    color: black;
+  }
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  font-size: 1.1em;
+
+  span:nth-child(2) {
+    color: #808FA3;
+  }
+}
+
+.cell-align {
+  justify-content: start;
+  position: absolute;
+  margin: auto;
+  left: 30px;
+}
+
+.table-row-item:hover {
+  background-color: white;
+  color: black;
+  box-shadow:
+    0 -4px 5px -5px rgba(0, 0, 0, 0.25),
+    0 4px 5px -5px rgba(0, 0, 0, 0.25);
+
+  .edit-action-button,
+  .duplicate-action-button,
+  .decline-action-button,
+  .confirm-action-button  {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+.mat-tab-label {
+  min-width: 25px !important;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.mat-tab-label.mat-tab-label-active {
+  min-width: 25px !important;
+  padding: 5px;
+  font-size: 14px;
+  color: #3359DB;
+  font-weight: 700;
+}
+
+
+.mat-ink-bar {
+  color: #3359DB  !important;
+  min-width: 25px !important;
+  background-color: #3359DB  !important;
+}
+
+.mat-tab-header{
+  width: 50%;
+  margin-bottom: 20px;
+}

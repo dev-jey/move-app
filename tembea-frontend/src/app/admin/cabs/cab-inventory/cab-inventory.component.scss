@@ -1,0 +1,217 @@
+button, select, option {
+  background-color: inherit;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.bottom-image {
+  background-image: url("/assets/images/san-francisco.png");
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  background-size: 600px 250px;
+  background-repeat: repeat-x;
+  position: fixed;
+}
+
+.cabs-grid-container  {
+  margin-top: 21px;
+}
+
+mat-grid-tile {
+  overflow: visible;
+}
+
+.pagination {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.cabs-table-head {
+  text-align: center;
+}
+
+.cabs-table .mat-grid-list {
+  align-items: center;
+  height: 15px;
+  padding: 10px;
+}
+
+.top-filter {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+}
+.filter-item {
+  height: 63px;
+  margin-right: 12.5px;
+  .title {
+    color: #808FA3;
+    font-family: "DIN Pro";
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 8.5px;
+  }
+  .filter-selector-button {
+    box-sizing: border-box;
+    border: 1px solid #E9EFF4;
+    border-radius: 13px;
+    background-color: rgba(244,247,249,0.4);
+
+    color: #323C47;
+    font-family: "DIN Pro";
+    font-size: 12px;
+    line-height: 26px;
+    padding: 6px 21px;
+    margin-right: 7.5px;
+    text-align: center;
+
+    select {
+      outline: 0;
+      box-shadow: none;
+      border: 0 !important;
+    }
+  }
+  .active {
+    color: #3359DB;
+    font-family: "DIN Pro";
+    font-weight: bold;
+    line-height: 26px;
+    box-shadow: 0 2px 4px 0 rgba(57,67,77,0.08);
+  }
+  .filter-icon {
+    display: inline-block;
+    background-color: #5171E0;
+    box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+    margin-right: 7px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+  }
+  .ic-filter-location::before {
+    content: url("/assets/icons/ic_filter_location.svg");
+  }
+  .ic-filter-batch::before {
+    content: url("/assets/icons/ic_filter_batch.svg");
+  }
+  .ic-filter-seats::before {
+    content: url("/assets/icons/ic_filter_seats.svg");
+  }
+}
+
+@media all and (max-width: 752px) {
+  .buttons-wrapper{
+    margin: 0rem auto 1rem;
+  }
+  .filter-item {
+    .filter-selector-button {
+      padding: 5px;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .cabs-grid-container  {
+    margin-top: 50px;
+  }
+  .filter-selector-wrapper {
+    button {
+      margin-top: 3px;
+    }
+  }
+  .filter-item {
+    .filter-selector-button {
+      padding: 6px 10px;
+    }
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sm-width {
+    display: block;
+  }
+  .l-width {
+    display: none;
+  }
+  .xl-width {
+    display: none;
+  }
+  .top-filter {
+    display: block;
+  }
+  .top-filter:first-child .filter-item{
+    margin-bottom: 50px;
+  }
+  .filter-selector-wrapper {
+    button {
+      margin-top: 3px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sm-width {
+    display: block;
+  }
+  .l-width {
+    display: none;
+  }
+  .xl-width {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sm-width {
+    display: none;
+  }
+  .l-width {
+    display: block;
+    width: 800px;
+    margin-left: -7%;
+  }
+  .xl-width {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1270px) {
+  .sm-width {
+    display: none;
+  }
+  .l-width {
+    display: none;
+  }
+  .xl-width {
+    display: block;
+  }
+}
+
+/* fix browser magnification at 110% */
+@media (min-width: 1270px) and (max-width: 1384px){
+  .cabs-grid-container {
+    display: block;
+  }
+  app-cab-card {
+    margin-left: 0.125rem;
+  }
+  .sm-width {
+    display: none;
+  }
+  .xl-width {
+    display: none;
+  }
+}

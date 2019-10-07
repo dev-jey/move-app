@@ -1,0 +1,24 @@
+<div class="cab-card">
+  <div class="card-header flex">
+    <span class="cab-name">{{ driverName || 'No Name'}}</span>
+    <button *ngIf="showMoreIcon" class="options flex-right" (click)="showMoreOptions()"></button>
+  </div>
+  <div class="card-body">
+    <div class="cab-number">
+      <i class="cab-card-icon ic-phone"></i>
+      <span class="body-text">{{ driverPhoneNo || '-' }}</span>
+    </div>
+    <div class="cab-capacity">
+      <i class="cab-card-icon ic-email"></i>
+      <span class="body-text">{{ driverEmail || '-' }}</span>
+    </div>
+  </div>
+  <div class="cab-card-action" [hidden]="hidden">
+    <div class="edit-action" (click)="openEditModal()">
+      <button class="action-button"><i class="action-icon ic-edit"></i>Edit</button>
+    </div>
+    <div class="delete-action" (click)="showDeleteModal()">
+      <button class="action-button"><i class="action-icon ic-delete"></i>Delete</button>
+    </div>
+  </div>
+</div>

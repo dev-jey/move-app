@@ -1,0 +1,10 @@
+<button class="upload-wrapper" [matMenuTriggerFor]="dropDown"></button>
+
+<mat-menu #dropDown="matMenu" class="toolbar-dropdown">
+  <button class="action-button" (click)="exportToPDFOrCSV('pdf')">
+    Download as PDF
+  </button>
+  <button class="action-button" (click)="exportToPDFOrCSV('csv')">
+    Download as CSV
+  </button>
+</mat-menu>

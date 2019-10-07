@@ -1,0 +1,38 @@
+
+.card-position {
+    width: 100%;
+    padding: 0 0 0 5px;
+}
+
+.routes-title {
+    height: 18px;
+	width: 145px;
+	color: #808FA3;
+	font-family: "DIN Pro";
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+    line-height: 18px;
+    margin-bottom: 27px;
+}
+.top-filter{
+    display: grid;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    grid-template-columns: repeat(4, 250px);
+  }
+.date-picker {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.background {
+  padding: 10px 0;
+}
+.dashboard-top-container {
+min-height: 200px ;
+}
+.dashboard-middle-container {
+
+}

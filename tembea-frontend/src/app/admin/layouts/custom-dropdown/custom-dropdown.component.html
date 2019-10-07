@@ -1,0 +1,6 @@
+<div class="select-style">
+  <select matNativeControl (change)="handleDropdown()" [(ngModel)]="selectedValue">
+    <option [defaultSelected]="selectedValue" >{{selectedValue}}</option>
+    <option *ngFor="let item of dropdownItems" value={{item.name}}>{{item.name}}</option>
+  </select>
+</div>

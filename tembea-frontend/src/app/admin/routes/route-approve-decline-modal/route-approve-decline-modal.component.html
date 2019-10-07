@@ -1,0 +1,42 @@
+<div class="modal-header">
+  <button class="close-button button-hover" (click)="closeDialog()">
+    &#x2715;
+  </button>
+</div>
+<div class=form-container>
+  <form #declineForm="ngForm" (ngSubmit)="decline(declineForm.value)" *ngIf="data.status === 1" novalidate>
+    <h1>Decline {{data.requesterFirstName | titlecase}}'s Route Request</h1>
+    <p class="message">Hi {{account.firstName | titlecase}}, why are you declining?</p>
+    <textarea required (ngModel)="comment" name="comment" class="decline-comment"></textarea>
+    <button type="submit" [disabled]="declineForm.invalid || loading" class="submit-btn button-hover">
+      <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+      SUBMIT
+    </button>
+  </form>
+  <form *ngIf="data.status === 0" #approveForm="ngForm" (ngSubmit)="approve(approveForm.value)" novalidate>
+    <h1>Approve {{data.requesterFirstName | titlecase}}'s Route Request</h1>
+    <p class="message">Route Name</p>
+    <input required (ngModel)="routeName" class="form-input" type="text" name="routeName"><br>
+    <div class="input-row">
+      <div class="input-row-content">
+        <span class="message-row">Take Off Time</span>
+        <input required (ngModel)="takeOff" class="time-input" type="time" name="takeOff">
+      </div>
+    </div>
+    <p class="message">Assign a Provider</p>
+    <input required [(ngModel)]="providerName" (change)="clearRouteFields($event)"
+           class="plate-input" type="text" name="providerName" aria-label="Provider"
+           matInput [matAutocomplete]="auto">
+    <app-select-provider
+      optionValue="name" [approveForm]="approveForm"
+      (clickedProviders)="clickedRouteProviders($event)"
+      (emitAutoComplete)="setAuto($event)">
+    </app-select-provider>
+    <p class="message">Comment</p>
+    <textarea required (ngModel)="comment" name="comment" class="decline-comment"></textarea>
+    <button type="submit" [disabled]="approveForm.invalid || loading" class="submit-btn button-hover">
+      <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+      SUBMIT
+    </button>
+  </form>
+</div>

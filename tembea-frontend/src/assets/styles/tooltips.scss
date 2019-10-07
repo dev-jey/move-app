@@ -1,0 +1,138 @@
+span.tooltip, span.tooltips {
+  display:inline-block;
+  position:relative;
+  text-align:left;
+}
+
+span.tooltips span {
+  position: absolute;
+  transition: opacity 0.3s;
+  width:180px;
+  display: block;
+  white-space: normal;
+  word-wrap:break-word;
+  color: #030303;
+  background: #FFFFFF;
+  height: 60px;
+  font-weight: normal;
+  padding: 15px;
+  line-height: 20px;
+  text-align: left;
+  visibility: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+span.tooltips span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-bottom: 8px solid #FFFFFF;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.badge:hover{
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+span:hover.tooltips span {
+  visibility: visible;
+  animation-duration: 0.25s;
+  opacity: 1;
+  top: 50px;
+  left: -20%;
+  margin-left: -76px;
+  z-index: 999;
+}
+
+span.tooltip .show-on-left {
+  min-width:20px;
+  max-width:60px;
+  top:50%;
+  right:100%;
+  margin-right:20px;
+  transform:translate(30%, -20%);
+  padding:5px;
+  color:#000000;
+  background-color:#FFFFFF;
+  font-weight:normal;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  border:1px solid #DDDDDD;
+  display:none;
+}
+
+span.tooltip:hover .show-on-left,
+span.tooltip:hover .show-on-right {
+  display:block;
+}
+
+span.tooltip .show-on-left i {
+  position:absolute;
+  top:50%;
+  left:100%;
+  margin-top:-10px;
+  width:10px;
+  height:20px;
+  overflow:hidden;
+}
+
+span.tooltip .show-on-left i::after {
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  left:0;
+  top:50%;
+  transform:translate(-75%,-60%) rotate(-45deg);
+  background-color:#FFFFFF;
+  border:1px solid #DDDDDD;
+}
+
+span.tooltip .show-on-right {
+  min-width:20px;
+  max-width:60px;
+  top:50%;
+  left:100%;
+  margin-left:20px;
+  transform:translate(-50%, -20%);
+  padding:5px;
+  color:#000000;
+  background-color:#FFFFFF;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  border:1px solid #DDDDDD;
+  display:none;
+}
+
+span.tooltip .show-on-right i {
+  position:absolute;
+  top:50%;
+  right:100%;
+  margin-top:-10px;
+  width:10px;
+  height:20px;
+  overflow:hidden;
+}
+
+span.tooltip .show-on-right i::after {
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  left:0;
+  top:50%;
+  transform:translate(70%,-60%) rotate(-45deg);
+  background-color:#FFFFFF;
+  border:1px solid #DDDDDD;
+}

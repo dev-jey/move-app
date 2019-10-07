@@ -1,0 +1,27 @@
+<div class="modal-body">
+  <div class="modal-header">
+    <button class="close-button" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class="display-flex-center">
+    <p class="header-title">
+      Are you sure you want to Delete?
+    </p>
+    <div class="card-body">
+      <app-driver-card
+        [driverName]="driver.name"
+        [driverPhoneNo]="driver.phoneNo"
+        [driverEmail]="driver.email"
+        [hidden]="true"
+        [showMoreIcon]="false">
+      </app-driver-card>
+    </div>
+    <button class="action-buttons confirm" (click)="delete()">
+      YES, DELETE
+    </button>
+    <button mat-dialog-close class="action-buttons cancel" (click)="closeDialog()">
+      CANCEL
+    </button>
+  </div>
+</div>

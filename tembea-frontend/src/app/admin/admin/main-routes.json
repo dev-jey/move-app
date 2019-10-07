@@ -1,0 +1,33 @@
+{
+  "routes": [
+  { "name": "Dashboard", "iconActive": "dashboard", "iconInActive": "dashboard-inactive", "link": "dashboard", "pages": [] },
+  {
+    "name": "Routes", "iconActive": "routes", "iconInActive": "routes-inactive", "link": "routes", "pages": [
+    { "name": "Create Route", "link": "routes/create", "id": "create-routes" },
+    { "name": "Requests", "link": "routes/requests", "id": "requests-routes" },
+    { "name": "Inventory", "link": "routes/inventory", "id": "inventory-routes" }
+  ]
+  },
+  {
+    "name": "Trips", "iconActive": "trips", "iconInActive": "trips-inactive", "link": "trips", "pages": [
+    { "name": "Pending Requests", "link": "trips/pending", "id": "pending-trips" },
+    { "name": "Trip Itinerary", "link": "trips/itinerary", "id": "itinerary-trips" }
+  ]
+  },
+  {
+    "name": "Travel", "iconActive": "travel", "iconInActive": "travel-inactive", "link": "travel", "pages": [
+    { "name": "Airport Transfers", "link": "travel/airport-transfers", "id": "airport-transfer-trips" },
+    { "name": "Embassy Visits", "link": "travel/embassy-visits", "id": "embassy-visit-trips" }
+  ]
+  },
+  {
+    "name": "Providers", "iconActive": "cabs", "iconInActive": "cabs-inactive", "link": "providers", "pages": []
+  },
+  {
+    "name": "Settings", "iconActive": "settings", "iconInActive": "settings-inactive", "link": "settings", "pages": [
+    { "name": "Fellows", "link": "settings/fellows", "id": "fellows-settings" },
+    { "name": "Departments", "link": "settings/departments", "id": "department-settings" }
+  ]
+  }
+]
+}

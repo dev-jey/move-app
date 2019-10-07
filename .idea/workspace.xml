@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2a0cd34-3be0-46d8-b4fd-07d829f3143f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/trip-itinerary/trip-itinerary.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/trip-itinerary/trip-itinerary.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.codeclimate.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.env.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.sequelizerc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/.sequelizerc.build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/__mocks__/mailgun-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/__mocks__/pdfkit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/__mocks__/request-promise-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/__mocks__/voilab-pdf-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/dev/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/dev/entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/release/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/tests/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/tests/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/docker/tests/entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/AISService.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/AISService.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/AddressService.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/AddressService.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/AuthenticationController.int.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/AuthenticationController.int.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/CountriesController.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/CountriesController.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/HomebaseController.int.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/HomebaseController.int.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/HomebaseService.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/HomebaseService.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/ProviderController.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/ProviderController.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/ProviderService.int.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/ProviderService.int.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/RoleManagementController.int.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/RoleManagementController.int.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/RouteApprovalOrDecline.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/RouteApprovalOrDecline.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/RoutesController.int.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/RoutesController.int.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/TripService.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/TripService.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/googleCloudStorage.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/googleCloudStorage.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/integrations/redisCacheSingleton.integration.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/integrations/redisCacheSingleton.integration.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/__mocks__/redisClientMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/__mocks__/redisClientMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/__tests__/lruCacheSingleton.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/__tests__/lruCacheSingleton.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/__tests__/redisCacheSingleton.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/__tests__/redisCacheSingleton.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/lruCache.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/lruCache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cache/redisCache.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cache/redisCache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__mocks__/cloudStorageEngineMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__mocks__/cloudStorageEngineMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__mocks__/googleCloudStorageMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__mocks__/googleCloudStorageMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__tests__/cloudStorageEngine.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__tests__/cloudStorageEngine.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__tests__/googleCloudStorage.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/__tests__/googleCloudStorage.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/cloudStorageEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/cloudStorageEngine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/googleCloudStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/googleCloudStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/cloudStorage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/config/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/config/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/config/environment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/config/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/config/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/__tests__/Provider.model.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/__tests__/Provider.model.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181113195238-create-location.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181113195238-create-location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114110625-create-address.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114110625-create-address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114114526-create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114114526-create-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114122029-create-cab.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114122029-create-cab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114125545-create-trip_request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114125545-create-trip_request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114130033-create-department.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181114130033-create-department.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181122173901-create-team-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181122173901-create-team-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181128101437-modify-trip-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181128101437-modify-trip-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181202172012-add-operations-tripActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181202172012-add-operations-tripActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181204124240-create-add-reason-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181204124240-create-add-reason-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211120831-add-passengers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211120831-add-passengers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211195753-create-trip-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211195753-create-trip-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211200642-alterTripRequestTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20181211200642-alterTripRequestTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190103173433-add-dept-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190103173433-add-dept-status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190108114333-add-opschannelid.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190108114333-add-opschannelid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190108144658-remove-defaultValue-contraint-on-opsChannels.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190108144658-remove-defaultValue-contraint-on-opsChannels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190115061420-add-teamId-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190115061420-add-teamId-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190115130307-remove-defaultValue-onDepartment.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190115130307-remove-defaultValue-onDepartment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122150930-create-partner.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122150930-create-partner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122153117-create-engagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122153117-create-engagement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122164725-create-route-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190122164725-create-route-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190124134151-create-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190124134151-create-role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190124135857-create-user-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190124135857-create-user-role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190204164947-create-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190204164947-create-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190205123821-create-route-batch.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190205123821-create-route-batch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190205125840-create-add-route-batch-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190205125840-create-add-route-batch-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190207063819-modify-route-requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190207063819-modify-route-requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190207204549-create-join-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190207204549-create-join-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190306104416-add-dept-location.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190306104416-add-dept-location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190313123503-add-deletedAt-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190313123503-add-deletedAt-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190314100246-modify-cabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190314100246-modify-cabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190319192828-add-rating-column-trip-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190319192828-add-rating-column-trip-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190326120051-create-route-use-record.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190326120051-create-route-use-record.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190326120117-create-batch-use-record.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190326120117-create-batch-use-record.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190327112934-add_trip_not_taken_reason.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190327112934-add_trip_not_taken_reason.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190327162710-create-country.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190327162710-create-country.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190328105914-add_default_location_as_nariobi_to_departments.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190328105914-add_default_location_as_nariobi_to_departments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190328161504-add-status-column-countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190328161504-add-status-column-countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190401120731-add_trip_notes_column.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190401120731-add_trip_notes_column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190401122216-fix_wrong_teamId_on_department.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190401122216-fix_wrong_teamId_on_department.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190411172310-add-distance-column-TripRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190411172310-add-distance-column-TripRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190423111734-add-deletedAt-column-in-cabs-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190423111734-add-deletedAt-column-in-cabs-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190424173417-create-homebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190424173417-create-homebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190430080815-update-andela-nairobi-coords.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190430080815-update-andela-nairobi-coords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505120910-remove-duplicate-addresses-from-tripRequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505120910-remove-duplicate-addresses-from-tripRequests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505122050-remove-duplicate-addresses-from-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505122050-remove-duplicate-addresses-from-routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505122740-remove-duplicate-addresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505122740-remove-duplicate-addresses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505125936-add-unique-constraint-to-addresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190505125936-add-unique-constraint-to-addresses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190514070041-create-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190514070041-create-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190514140853-modify-cabs-add-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190514140853-modify-cabs-add-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190515141241-add_requester_id_to_route_request.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190515141241-add_requester_id_to_route_request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190527151918-create-driver.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190527151918-create-driver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190528170258-move_driver_details_from_cabs_to_drivers_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190528170258-move_driver_details_from_cabs_to_drivers_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190530142932-modify-cabs-remove-driver-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190530142932-modify-cabs-remove-driver-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190531035724-add_driver_to_route.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/migrations/20190531035724-add_driver_to_route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/batchuserecord.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/batchuserecord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/cab.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/cab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/country.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/country.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/department.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/driver.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/driver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/engagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/engagement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/homebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/homebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/joinrequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/joinrequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/partner.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/partner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/routebatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/routebatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/routerequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/routerequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/routeuserecord.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/routeuserecord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/teamDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/teamDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/tripDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/tripDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/triprequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/triprequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/models/userRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/models/userRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114181945-users.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114181945-users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195748-location.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195748-location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195749-addresses.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195749-addresses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195812-tripRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181114195812-tripRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181127151628-dummy-dept-heads.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181127151628-dummy-dept-heads.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181128110749-demo-departments.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181128110749-demo-departments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181203080950-demo-trip-requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181203080950-demo-trip-requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181205144810-add-more-users.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181205144810-add-more-users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181205145336-add-trip-requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181205145336-add-trip-requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181206073555-demo-team-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181206073555-demo-team-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181211141037-demo-team-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181211141037-demo-team-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181211205628-dummy-Finance-dept.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20181211205628-dummy-Finance-dept.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072602-demo-partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072602-demo-partners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072617-demo-engagements.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072617-demo-engagements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072623-demo-route-requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190124072623-demo-route-requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129073934-NewTestUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129073934-NewTestUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129110318-NewRoles.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129110318-NewRoles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111146-demo-providers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111146-demo-providers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111147-addUserToRoles.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111147-addUserToRoles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111147-cabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190129111147-cabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190206120922-dummyDrivers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190206120922-dummyDrivers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190206120923-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190206120923-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190208094518-dummy-join-route-requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190208094518-dummy-join-route-requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190408050639-demo-countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/database/seeders/20190408050639-demo-countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/hbsConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/hbsConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/AISHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/AISHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/CountryHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/CountryHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/ErrorTypeChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/ErrorTypeChecker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/HomebaseHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/HomebaseHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/RouteHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/RouteHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/TripHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/TripHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/TripHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/TripHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/countryHelperMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/countryHelperMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/googleMapHelpersMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/googleMapHelpersMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/providersMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/providersMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/routeMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/routeMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/tripRequestMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__mocks__/tripRequestMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/ErrorTypeChecker.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/ErrorTypeChecker.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/bugsnagHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/bugsnagHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/cleanData.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/cleanData.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/countryHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/countryHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/googleMapsHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/googleMapsHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/homebaseHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/homebaseHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/providerHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/providerHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/removeDataValues.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/removeDataValues.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/routeHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/routeHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/sendDialogTryCatch.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/sendDialogTryCatch.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/sequelizePaginationHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/__tests__/sequelizePaginationHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/bugsnagHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/bugsnagHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/cleanData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/cleanData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/dateHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/dateHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/email/__test__/monthlyReportSender.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/email/__test__/monthlyReportSender.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/email/monthlyReportSender.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/email/monthlyReportSender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/errorHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__mocks__/GoogleMapsMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__mocks__/GoogleMapsMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/GoogleMaps.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/GoogleMaps.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/googleMapsError.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/googleMapsError.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/googleMapsHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/googleMapsHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/locatest.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/locatest.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/locationsMapHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/__tests__/locationsMapHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/busStopValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/busStopValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/googleMapsError.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/googleMapsError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/googleMapsHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/googleMapsHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/locationsMapHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/googleMaps/locationsMapHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/providerHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/providerHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/removeDataValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/removeDataValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/responseHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/responseHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/sendDialogTryCatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/sendDialogTryCatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/sequelizePaginationHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/sequelizePaginationHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/ScheduleTripInputHandlers/__tests__/scheduleTripInputHandlers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/ScheduleTripInputHandlers/__tests__/scheduleTripInputHandlers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/ScheduleTripInputHandlers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/ScheduleTripInputHandlers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/SlackPaginationHelper/__tests__/SlackPaginationHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/SlackPaginationHelper/__tests__/SlackPaginationHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/SlackPaginationHelper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/SlackPaginationHelper/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/InputValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/InputValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/Validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/Validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/InputValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/InputValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/userInputValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/userInputValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/validateDialogSubmission.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/__tests__/validateDialogSubmission.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/managerFormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/UserInputValidator/managerFormValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/getUserInfoFromSlack.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/getUserInfoFromSlack.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/slackHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/slackHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/updatePastMessageHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/__tests__/updatePastMessageHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createDialogForm/__tests__/createDialog.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createDialogForm/__tests__/createDialog.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createDialogForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createDialogForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createTripDetailsForm/__tests__/createTripDetailsForm.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createTripDetailsForm/__tests__/createTripDetailsForm.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createTripDetailsForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/createTripDetailsForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/navButtons/__tests__/navButtons.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/navButtons/__tests__/navButtons.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/navButtons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/navButtons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/searchButton/__tests__/searchButton.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/searchButton/__tests__/searchButton.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/searchButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/searchButton/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/slackHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/slackHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/updatePastMessageHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slack/updatePastMessageHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/helpers/slackBodyParserFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/helpers/slackBodyParserFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/AddressValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/AddressValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/CabsValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/CabsValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/CleanRequestBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/CleanRequestBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/CountryValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/CountryValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/DepartmentValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/DepartmentValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/GeneralValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/GeneralValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/HomebaseValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/HomebaseValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/ProviderValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/ProviderValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/RouteRequestValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/RouteRequestValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/RouteValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/RouteValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/TokenValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/TokenValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/TripValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/TripValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/UserValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/UserValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__mocks__/CabsValidatorMocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__mocks__/CabsValidatorMocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__mocks__/CountryValidatorMocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__mocks__/CountryValidatorMocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/CabsValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/CabsValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/CountryValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/CountryValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/GeneralValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/GeneralValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/HomebaseValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/HomebaseValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/ProviderValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/ProviderValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/RouteValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/RouteValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/TokenValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/TokenValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/TripValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/TripValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/UserValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/UserValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/addressValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/addressValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/departmentValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/departmentValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/routeRequestValidator.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/__tests__/routeRequestValidator.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/middlewares/slackClientAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/middlewares/slackClientAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/AddressController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/AddressController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/__tests__/addressController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/__tests__/addressController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/addresses/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/ais/AISController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/ais/AISController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/ais/__mocks__/AISData.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/ais/__mocks__/AISData.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/ais/__tests__/AISController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/ais/__tests__/AISController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/ais/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/ais/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/apiSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/apiSpec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/AuthenticationController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/AuthenticationController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/__tests__/AuthenticationController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/__tests__/AuthenticationController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/authentication/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/CabsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/CabsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/__mocks__/cabsMocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/__mocks__/cabsMocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/__tests__/CabsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/__tests__/CabsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/cabs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/countries/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/countries/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/countries/__tests__/Country.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/countries/__tests__/Country.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/countries/countriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/countries/countriesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/countries/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/countries/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/DepartmentsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/DepartmentsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__mocks__/addDepartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__mocks__/addDepartments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/addDepartments.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/addDepartments.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/deleteRecord.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/deleteRecord.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/getDepartments.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/getDepartments.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/updateDepartmentRecord.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/__tests__/updateDepartmentRecord.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/departments/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/departments/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/DriverController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/DriverController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/__tests__/DriverController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/__tests__/DriverController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/__tests__/mockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/__tests__/mockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/drivers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/exports/ExportsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/exports/ExportsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/exports/__mocks__/ExportsControllerMocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/exports/__mocks__/ExportsControllerMocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/exports/__tests__/ExportsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/exports/__tests__/ExportsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/exports/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/exports/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/FellowsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/FellowsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/__mocks__/FellowsControllerMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/__mocks__/FellowsControllerMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/__tests__/FellowsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/__tests__/FellowsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/fellows/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/home/HomeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/home/HomeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/home/__mocks__/HomeControllerMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/home/__mocks__/HomeControllerMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/home/__tests__/HomeController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/home/__tests__/HomeController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/HomebaseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/HomebaseController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/__tests__/HomebaseController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/__tests__/HomebaseController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/homebases/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/providers/ProviderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/providers/ProviderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/providers/__mocks__/ProviderMockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/providers/__mocks__/ProviderMockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/providers/__tests__/ProviderController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/providers/__tests__/ProviderController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/providers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/providers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/RoleManagementController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/RoleManagementController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/__tests__/RoleManagementController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/__tests__/RoleManagementController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/roleManagement/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/RouteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/RouteController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/RouteUsageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/RouteUsageController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__mocks__/mockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__mocks__/mockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__mocks__/routeMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__mocks__/routeMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__tests__/RouteController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__tests__/RouteController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__tests__/RouteRequestController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/__tests__/RouteRequestController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteDialogPrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteDialogPrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteFormValidators.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteFormValidators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteInputHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteInputHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteInteractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteInteractions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteNotifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/JoinRouteNotifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/DialogPrompts.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/DialogPrompts.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/FormValidators.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/FormValidators.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/Helpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/Helpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/InputHandlers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/InputHandlers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/JoinRouteController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/JoinRouteController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/JoinRouteInteraction.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/JoinRouteInteraction.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/Notifications.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/JoinRoute/__tests__/Notifications.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/ManagerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/ManagerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/OperationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/OperationsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/ProvidersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/ProvidersController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/RouteInputHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/RouteInputHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/RouteInputHandlerHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/RouteInputHandlerHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__mocks__/payload.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__mocks__/payload.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__mocks__/providersController.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__mocks__/providersController.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/ManagerController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/ManagerController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/OperationsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/OperationsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/ProvidersController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/ProvidersController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/RouteInputHandler.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/RouteInputHandler.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/RouteInputHandlerHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/RouteInputHandlerHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/dummyMockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/__tests__/dummyMockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/rootFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/RouteManagement/rootFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/SlackInteractionsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/SlackInteractionsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/SlackInteractionsRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/SlackInteractionsRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/__mocks__/SlackInteractions.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/__mocks__/SlackInteractions.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/__tests__/SlackInteractions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/__tests__/SlackInteractions.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackInteractions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/SlackDialogModels.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/SlackDialogModels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/SlackMessageModels.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/SlackMessageModels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/__tests__/SlackDialogModels.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/__tests__/SlackDialogModels.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/__tests__/SlackMessageModels.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackModels/__tests__/SlackMessageModels.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/DialogPrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/DialogPrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/InteractivePrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/InteractivePrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/LocationPrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/LocationPrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/Notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/NotificationsResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/NotificationsResponse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/PreviewPrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/PreviewPrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/InteractivePrompts.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/InteractivePrompts.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/NotificationResponseMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/NotificationResponseMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/NotificationsMocks.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/NotificationsMocks.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/dialogPrompt.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__mocks__/dialogPrompt.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/AttachmentHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/AttachmentHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/DialogPrompts.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/DialogPrompts.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/InterativePrompts.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/InterativePrompts.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/LocaltionPrompts.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/LocaltionPrompts.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/Notifications.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/Notifications.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/NotificationsResponse.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/NotificationsResponse.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/PreviewPrompts.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/__tests__/PreviewPrompts.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/AttachmentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/AttachmentHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/__tests__/ManagerRouteRequest.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/__tests__/ManagerRouteRequest.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ManagerRouteRequest/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__mocks__/SlackAttachment.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__mocks__/SlackAttachment.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__tests__/OperationsRouteRequest.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__tests__/OperationsRouteRequest.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/__tests__/ProvidersNotifications.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/__tests__/ProvidersNotifications.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/RouteNotifications/__tests__/RouteNotifcations.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/RouteNotifications/__tests__/RouteNotifcations.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/RouteNotifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/RouteNotifications/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/TripInteractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/TripInteractions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/__tests__/TripINteractions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/__tests__/TripINteractions.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/__tests__/TripNotifications.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/__tests__/TripNotifications.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/SlackPrompts/notifications/TripNotifications/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/CancelTripController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/CancelTripController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/ManageTripController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/ManageTripController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/OpsTripActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/OpsTripActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/RateTripController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/RateTripController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/RescheduleTripController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/RescheduleTripController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/ScheduleTripController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/ScheduleTripController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripActionsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripActionsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripCabController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripCabController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripItineraryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/TripItineraryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/ManageTripController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/ManageTripController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/OpsTripActions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/OpsTripActions.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripActionsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripActionsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripCabController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripCabController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripItineraryController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/TripItineraryController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/cancelTripController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/cancelTripController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/rateTripController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/rateTripController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/rescheduleTripController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/rescheduleTripController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/scheduleTripController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/TripManagement/__tests__/scheduleTripController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/DialogPrompts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/DialogPrompts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/SlackClientMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/SlackClientMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/SlackControllerMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__mocks__/SlackControllerMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__tests__/SlackController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/__tests__/SlackController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/slackEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/events/slackEvents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/dateHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/dateHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/formHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/formHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/routeDummyData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/routeDummyData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/routesHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/__tests__/routesHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/dateHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/dateHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/formHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/formHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/routesHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/routesHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/CabsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/CabsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/InteractivePromptsHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/InteractivePromptsHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ManagerActionsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ManagerActionsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/OperationsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/OperationsHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ProvidersHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ProvidersHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelRequester.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelRequester.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelTripHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelTripHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/createTravelTripDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/createTravelTripDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/previewTripDetailsAttachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/previewTripDetailsAttachment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/travelHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TravelTripHelper/travelHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TripItineraryHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/TripItineraryHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ViewTripHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/ViewTripHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/CabsHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/CabsHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/InteractivePromptsHelpers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/InteractivePromptsHelpers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ManagerActionsHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ManagerActionsHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/OperationsHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/OperationsHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ProvidersHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ProvidersHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ViewTripHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/ViewTripHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/previewScheduleTripAttachments.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/previewScheduleTripAttachments.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/rescheduleHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/rescheduleHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/slackValidations.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/slackValidations.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/tripIntineraryHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/__tests__/tripIntineraryHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/previewScheduleTripAttachments.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/previewScheduleTripAttachments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/rescheduleHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/rescheduleHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/slackValidations.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/helpers/slackHelpers/slackValidations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/slack/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/slack/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/trips/TripsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/trips/TripsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/TripsController.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/TripsController.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/__mocks__/TripsControllerMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/__mocks__/TripsControllerMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/trips/__tests__/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/trips/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/trips/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/users/UsersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/users/UsersController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/createNewUser.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/createNewUser.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/getRecords.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/getRecords.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/updateUserRecord.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/users/__tests__/updateUserRecord.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/modules/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/modules/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/scripts/__tests__/startUpHelper.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/scripts/__tests__/startUpHelper.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/scripts/startUpHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/scripts/startUpHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/AISService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/AISService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/AddressService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/AddressService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/BatchUseRecordService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/BatchUseRecordService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/CabService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/CabService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/CountryService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/CountryService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/DepartmentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/DepartmentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/DriverService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/DriverService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/EmailService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/EmailService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/HomebaseService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/HomebaseService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/JoinRouteRequestService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/JoinRouteRequestService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/LocationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/LocationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/PartnerService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/PartnerService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/ProviderService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/ProviderService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/RoleService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/RoleService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/RouteRequestService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/RouteRequestService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/RouteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/RouteService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/RouteUseRecordService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/RouteUseRecordService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/SerivceUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/SerivceUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/TeamDetailsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/TeamDetailsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/TripDetailsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/TripDetailsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/TripService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/TripService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/AISService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/AISService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/AddressService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/AddressService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/BatchUseRecordService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/BatchUseRecordService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/CabService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/CabService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/CountryService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/CountryService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/DepartmentService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/DepartmentService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/DriverService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/DriverService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/EmailService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/EmailService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/GoogleMapsDirections.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/GoogleMapsDirections.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/HomebaseService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/HomebaseService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/JoinRouteRequestService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/JoinRouteRequestService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/LocationService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/LocationService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/PartnerService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/PartnerService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/ProviderService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/ProviderService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RoleService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RoleService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteRequestService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteRequestService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteUseRecordService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/RouteUseRecordService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/TripDetailsService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/TripDetailsService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/TripService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/TripService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/UserService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/UserService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/routeServicesMockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/routeServicesMockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/teamDetailsService.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/__tests__/teamDetailsService.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsDirections.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsDirections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsDistanceMatrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsDistanceMatrix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsPlaceDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsPlaceDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsReverseGeocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsReverseGeocode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsStatic.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsStatic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsSuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/GoogleMapsSuggestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__mocks__/GoogleMapsSuggestionsMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__mocks__/GoogleMapsSuggestionsMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__mocks__/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsDistanceMatrix.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsDistanceMatrix.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsPlaceDetails.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsPlaceDetails.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsReverseGeocode.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsReverseGeocode.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsStatic.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsStatic.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsSuggestions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/__tests__/GoogleMapsSuggestions.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/googleMaps/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/BootJobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/BootJobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__mocks__/TripCompletionMockData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__mocks__/TripCompletionMockData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__tests__/BootJobs.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__tests__/BootJobs.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__tests__/TripCompletionJob.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/__tests__/TripCompletionJob.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/ConfirmRouteUseJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/ConfirmRouteUseJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/MonthlyReportsJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/MonthlyReportsJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/TripCompletionJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/TripCompletionJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/__tests__/ConfirmRouteUseJob.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/__tests__/ConfirmRouteUseJob.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/__tests__/MonthlyReprtsJob.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/jobScheduler/jobs/__tests__/MonthlyReprtsJob.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/report/GenerateExcelBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/report/GenerateExcelBook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/report/ReportData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/report/ReportData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/report/ReportGeneratorService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/report/ReportGeneratorService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/report/__mocks__/TripsDataMock.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/report/__mocks__/TripsDataMock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/services/report/__tests__/GenerateData.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/services/report/__tests__/GenerateData.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/ExportData.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/ExportData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/WebClientSingleton.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/WebClientSingleton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/ExportDataMocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/ExportDataMocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/WebClientSingleton.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/WebClientSingleton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__mocks__/redis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/ExportData.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/ExportData.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/utils.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/utils.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/webClient.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/__tests__/webClient.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/dist/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/dist/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/src/middlewares/DriversValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/src/middlewares/DriversValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/src/middlewares/ProviderValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/src/middlewares/ProviderValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tembea/src/services/DriverService.js" beforeDir="false" afterPath="$PROJECT_DIR$/tembea/src/services/DriverService.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/tembea/node_modules/" />
+    <ignored path="$PROJECT_DIR$/tembea-frontend/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="550" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/driver-modal/driver-modal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-542" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-291" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-inventory/driver-inventory.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-604">
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/driver-modal/driver-modal.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/provider-modal/provider-modal.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>operationsRouteController</find>
+      <find>updateProviderStatusNotificationMessage</find>
+      <find>dec</find>
+      <find>mockRouteAttachment</find>
+      <find>jest.spyOn(ProviderAttachmentHelper, 'getStatusLabels'</find>
+      <find>payload</find>
+      <find>routeId</find>
+      <find>getFellowApproveAttachment</find>
+      <find>ProviderRouteRequest</find>
+      <find>bot</find>
+      <find>TeamDetailsService</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/tembea-frontend" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tembea/src/helpers/providerHelper.js" />
+        <option value="$PROJECT_DIR$/tembea/src/helpers/__tests__/providerHelper.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/helpers/__mocks__/providersMock.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/cabs/__tests__/CabsController.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/index.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/OperationsController.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/helpers/slackHelpers/OperationsHelper.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/__tests__/OperationsController.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/services/__tests__/ProviderService.spec.js" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/__services__/providers.service.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/__services__/providers.service.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/providers.component.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/helpers/slackHelpers/__tests__/OperationsHelper.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelTripHelper.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderRouteRequest/index.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderRouteRequest/__tests__/ProvidersRouteRequest.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__tests__/OperationsRouteRequest.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/DialogPrompts.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/__tests__/DialogPrompts.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/ProvidersController.js" />
+        <option value="$PROJECT_DIR$/tembea/src/services/__mocks__/index.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/__tests__/ProvidersController.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/services/DriverService.js" />
+        <option value="$PROJECT_DIR$/tembea/src/services/__tests__/DriverService.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/index.js" />
+        <option value="$PROJECT_DIR$/tembea-frontend/package.json" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackInteractions/__tests__/SlackInteractions.spec.js" />
+        <option value="$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/__tests__/ProvidersNotifications.spec.js" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/__mocks__/driverMocks.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/__services__/drivers-inventory.service.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/provider-card/provider-card.component.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-edit-modal/driver-edit-modal.component.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.spec.ts" />
+        <option value="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/tembea/package.json" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="725" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="trips" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tembea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tembea" type="462c0819:PsiDirectoryNode" />
+              <item name="tembea-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="trips" type="462c0819:PsiDirectoryNode" />
+              <item name="display-trip-modal" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/tembea-frontend/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.DisplayTripModalComponent.should create">
+    <configuration name="DisplayTripModalComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/tembea-frontend" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts" />
+      <test-names>
+        <test-name value="DisplayTripModalComponent" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="DisplayTripModalComponent.should create" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/tembea-frontend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts" />
+      <test-names>
+        <test-name value="DisplayTripModalComponent" />
+        <test-name value="should create" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="DriverCardComponent.should open edit modal" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/tembea-frontend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.spec.ts" />
+      <test-names>
+        <test-name value="DriverCardComponent" />
+        <test-name value="should open edit modal" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="DriverCardComponent.should show more options" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/tembea-frontend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.spec.ts" />
+      <test-names>
+        <test-name value="DriverCardComponent" />
+        <test-name value="should show more options" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="driver-card.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/tembea-frontend/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/tembea-frontend" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.spec.ts" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.DisplayTripModalComponent.should create" />
+        <item itemvalue="Jest.DisplayTripModalComponent" />
+        <item itemvalue="Jest.driver-card.component.spec.ts" />
+        <item itemvalue="Jest.DriverCardComponent.should open edit modal" />
+        <item itemvalue="Jest.DriverCardComponent.should show more options" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2a0cd34-3be0-46d8-b4fd-07d829f3143f" name="Default Changelist" comment="" />
+      <created>1557776633318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557776633318</updated>
+      <workItem from="1557776636778" duration="350000" />
+      <workItem from="1557828943081" duration="1892000" />
+      <workItem from="1558009719954" duration="23493000" />
+      <workItem from="1558446713501" duration="9909000" />
+      <workItem from="1558595056008" duration="5246000" />
+      <workItem from="1559288294369" duration="1092000" />
+      <workItem from="1559681069967" duration="26259000" />
+      <workItem from="1560243229867" duration="4596000" />
+      <workItem from="1560839946503" duration="6520000" />
+      <workItem from="1561533330907" duration="2689000" />
+      <workItem from="1561724593185" duration="1008000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="driver-card_component_spec_ts - 2019.06.26 at 10h 57m 49s.xml">
+      <configuration name="driver-card.component.spec.ts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="driver-card_component_spec_ts - 2019.06.26 at 10h 59m 50s.xml">
+      <configuration name="driver-card.component.spec.ts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="driver-card_component_spec_ts - 2019.06.26 at 11h 00m 25s.xml">
+      <configuration name="driver-card.component.spec.ts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="driver-card_component_spec_ts - 2019.06.26 at 11h 03m 25s.xml">
+      <configuration name="driver-card.component.spec.ts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="driver-card_component_spec_ts - 2019.06.26 at 11h 04m 05s.xml">
+      <configuration name="driver-card.component.spec.ts" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="DisplayTripModalComponent - 2019.06.28 at 15h 24m 32s.xml">
+      <configuration name="DisplayTripModalComponent" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="DisplayTripModalComponent_should_create - 2019.06.28 at 15h 27m 00s.xml">
+      <configuration name="DisplayTripModalComponent.should create" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="DisplayTripModalComponent_should_create - 2019.06.28 at 15h 27m 36s.xml">
+      <configuration name="DisplayTripModalComponent.should create" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="DisplayTripModalComponent_should_create - 2019.06.28 at 15h 28m 30s.xml">
+      <configuration name="DisplayTripModalComponent.should create" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="DisplayTripModalComponent_should_create - 2019.06.28 at 15h 32m 02s.xml">
+      <configuration name="DisplayTripModalComponent.should create" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="83054000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="725" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2827641" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44084278" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39708266" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.53796446" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="270" height="522" id="Documentation" order="4" side_tool="true" weight="0.32956383" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28435266" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44084278" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.47334412" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="270" height="522" id="Documentation" order="4" side_tool="true" weight="0.32956383" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/provider-card/provider-card.component.spec.ts</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-edit-modal/driver-edit-modal.component.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tembea$ProviderController_integration_spec_js.info" NAME="ProviderController.integration.spec.js Coverage Results" MODIFIED="1558015780790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$SlackInteractions_Slack_Interactions_test__Tembea_Route_Slack_Interactions_test__Provider_Actions.info" NAME="SlackInteractions.Slack Interactions test: Tembea Route.Slack Interactions test: Provider Actions Coverage Results" MODIFIED="1559865947976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$CabsController_createCab.info" NAME="CabsController.createCab Coverage Results" MODIFIED="1558019900244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$OperationsRouteRequest_spec_js.info" NAME="OperationsRouteRequest.spec.js Coverage Results" MODIFIED="1560250687760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$TripCabController.info" NAME="TripCabController Coverage Results" MODIFIED="1558174712443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersComponent_getSearchResults_should_return_errors_if_a_special_character_is_used_in_the_search.info" NAME="ProvidersComponent.getSearchResults.should return errors if a special character is used in the search Coverage Results" MODIFIED="1558474066713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$OperationsController_spec_js.info" NAME="OperationsController.spec.js Coverage Results" MODIFIED="1559681435465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderNotifications_sendProviderRouteRequest_should_return_provider_notification_when_token_not_provided.info" NAME="ProviderNotifications.sendProviderRouteRequest.should return provider notification when token not provided Coverage Results" MODIFIED="1560247303187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersController.info" NAME="ProvidersController Coverage Results" MODIFIED="1558011376370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersController_spec_js.info" NAME="ProvidersController.spec.js Coverage Results" MODIFIED="1559747707368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$OperationsNotification_getProviderRouteAttachment.info" NAME="OperationsNotification.getProviderRouteAttachment Coverage Results" MODIFIED="1559739738317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Providers_Helper.info" NAME="Providers Helper Coverage Results" MODIFIED="1558017049241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersRouteRequest_spec_js.info" NAME="ProvidersRouteRequest.spec.js Coverage Results" MODIFIED="1559739564153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderNotifications_ProviderAttachmentHelper_should_get_provider_complete_attachment.info" NAME="ProviderNotifications.ProviderAttachmentHelper.should get provider complete attachment Coverage Results" MODIFIED="1559867697087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderNotifications_ProviderAttachmentHelper_should_create_provider_route_information.info" NAME="ProviderNotifications.ProviderAttachmentHelper.should create provider route information Coverage Results" MODIFIED="1559899121301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderController.info" NAME="ProviderController Coverage Results" MODIFIED="1558015980735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersService_getAllProviders_return_all_the_providers.info" NAME="ProvidersService.getAllProviders.return all the providers Coverage Results" MODIFIED="1558454049320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$driver_card_component_spec_ts.info" NAME="driver-card.component.spec.ts Coverage Results" MODIFIED="1560846949304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DriverCardComponent_should_open_edit_modal.info" NAME="DriverCardComponent.should open edit modal Coverage Results" MODIFIED="1560846908918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderNotifications_ProviderAttachmentHelper_should_get_provider_route_information.info" NAME="ProviderNotifications.ProviderAttachmentHelper.should get provider route information Coverage Results" MODIFIED="1559867510799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderNotifications_sendProviderRouteRequest_should_return_provider_notification.info" NAME="ProviderNotifications.sendProviderRouteRequest.should return provider notification Coverage Results" MODIFIED="1560249785154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Operations_Route_Controller_operations_actions_operations_approve_request_should_not_submit_invalid_user_input.info" NAME="Operations Route Controller.operations actions.operations approve request.should not submit invalid user input Coverage Results" MODIFIED="1558343969668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderCardComponent_should_show_more_options.info" NAME="ProviderCardComponent.should show more options Coverage Results" MODIFIED="1558448013496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DriverCardComponent_should_show_more_options.info" NAME="DriverCardComponent.should show more options Coverage Results" MODIFIED="1560846555389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Operations_Route_Controller_operations_actions_operations_approve_request_get_cab_details_if_number_plate_is_selected.info" NAME="Operations Route Controller.operations actions.operations approve request.get cab details if number plate is selected Coverage Results" MODIFIED="1558343418953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$operations_approve_request_get_cab_details_if_number_plate_is_selected_from_dropdown.info" NAME="operations approve request.get cab details if number plate is selected from dropdown Coverage Results" MODIFIED="1558595286455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$operations_approve_request_get_cab_details_if_a_new_cab_is_created.info" NAME="operations approve request.get cab details if a new cab is created Coverage Results" MODIFIED="1558596590038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$driver_edit_modal_component_spec_ts.info" NAME="driver-edit-modal.component.spec.ts Coverage Results" MODIFIED="1560848146672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$TravelTripHelper_contactDetails_should_complete_trip_request.info" NAME="TravelTripHelper.contactDetails.should complete trip request Coverage Results" MODIFIED="1558627314103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$CabsController_getAllCabs.info" NAME="CabsController_getAllCabs Coverage Results" MODIFIED="1558020971455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersComponent_ngOnInit_should_show_options.info" NAME="ProvidersComponent.ngOnInit.should show options Coverage Results" MODIFIED="1558450795701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DialogPrompts_spec_js.info" NAME="DialogPrompts.spec.js Coverage Results" MODIFIED="1559746126349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Dialog_prompts_test_should_test_provider_dialog_form_function.info" NAME="Dialog prompts test.should test provider dialog form function Coverage Results" MODIFIED="1559683333021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersComponent_getProvidersData_should_return_errors_the_app_fails_to_get_data.info" NAME="ProvidersComponent.getProvidersData.should return errors the app fails to get data Coverage Results" MODIFIED="1558475247319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersComponent_ngOnInit_should_set_pagination.info" NAME="ProvidersComponent.ngOnInit.should set pagination Coverage Results" MODIFIED="1558450152885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Operations_Route_Controller_operations_actions_operations_approve_request_get_cab_details_if_a_new_car_is_created.info" NAME="Operations Route Controller.operations actions.operations approve request.get cab details if a new car is created Coverage Results" MODIFIED="1558343676882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$TravelTripHelper_contactDetails_should_complete_trip_request_to_be_decided.info" NAME="TravelTripHelper.contactDetails.should complete trip request to be decided Coverage Results" MODIFIED="1558626258279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$CabsController_spec_js.info" NAME="CabsController.spec.js Coverage Results" MODIFIED="1558020572849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Operations_Route_Controller_operations_actions_operations_approve_request_should_complete_approve_action.info" NAME="Operations Route Controller.operations actions.operations approve request.should complete approve action Coverage Results" MODIFIED="1558339247902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Dialog_prompts_test_should_test_sendOperationsApprovalDialog_function_on_create_new_cab.info" NAME="Dialog prompts test.should test sendOperationsApprovalDialog function on create new cab Coverage Results" MODIFIED="1558600950285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DriverInventoryService_getCabs_should_edit_a_driver.info" NAME="DriverInventoryService.getCabs.should edit a driver Coverage Results" MODIFIED="1560845838603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DriverEditModalComponent_should_edit_driver_and_give_a_toast_message_on_success.info" NAME="DriverEditModalComponent.should edit driver and give a toast message on success Coverage Results" MODIFIED="1560847868859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProviderService.info" NAME="ProviderService Coverage Results" MODIFIED="1558355636381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersNotifications_sendProviderApprovedMessageToFellow_should_send__providers_approve_notification_to_fellow.info" NAME="ProvidersNotifications.sendProviderApprovedMessageToFellow.should send  providers approve notification to fellow Coverage Results" MODIFIED="1559739514983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersNotifications_spec_js.info" NAME="ProvidersNotifications.spec.js Coverage Results" MODIFIED="1559867568546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersNotifications_completeProviderApproveActions_should_complete_the_approve_new_route_action.info" NAME="ProvidersNotifications.completeProviderApproveActions.should complete the approve new route action Coverage Results" MODIFIED="1559736514268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$OperationsNotifications_getProviderRouteAttachment_should_get_provider_route_attachment.info" NAME="OperationsNotifications.getProviderRouteAttachment.should get provider route attachment Coverage Results" MODIFIED="1559726157629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$ProvidersNotifications_sendProviderApprovedMessageToManager_should_send_a_notification_the_ops_department_from_the_provider.info" NAME="ProvidersNotifications.sendProviderApprovedMessageToManager.should send a notification the ops department from the provider Coverage Results" MODIFIED="1559739155842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$Provider_Controller.info" NAME="Provider Controller Coverage Results" MODIFIED="1559895567306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$DriverService_spec_js.info" NAME="DriverService.spec.js Coverage Results" MODIFIED="1559753702866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$CabsController.info" NAME="CabsController Coverage Results" MODIFIED="1558020051051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$OperationsNotifications_getProviderRouteAttachment.info" NAME="OperationsNotifications.getProviderRouteAttachment Coverage Results" MODIFIED="1559724560425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tembea$CreateDriver_getProviders_returns_a_list_of_drivers.info" NAME="CreateDriver.getProviders.returns a list of drivers Coverage Results" MODIFIED="1559758625356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/helpers/slackHelpers/TravelTripHelper/__tests__/travelTripHelper.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackModels/SlackMessageModels.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/helpers/slackHelpers/TravelTripHelper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="181" column="22" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/OperationsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-668">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderRouteRequest/__tests__/ProvidersRouteRequest.spec.js" />
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderRouteRequest/helper.js" />
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderRouteRequest/index.js" />
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/DialogPrompts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4110">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+          <folding>
+            <element signature="e#0#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/__tests__/DialogPrompts.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="101" column="104" selection-start-line="101" selection-start-column="104" selection-end-line="101" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/ManagerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1917">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/__tests__/OperationsController.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6073">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/DriverService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-739">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/helpers/sequelizePaginationHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/__tests__/ProviderService.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/__mocks__/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="396" column="2" selection-start-line="396" selection-start-column="2" selection-end-line="396" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/__tests__/DriverService.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/TeamDetailsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/Notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/home/__tests__/HomeController.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2620">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/__tests__/DepartmentService.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/services/DepartmentService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackInteractions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="348" column="3" selection-start-line="348" selection-start-column="3" selection-end-line="348" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackInteractions/__tests__/SlackInteractions.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="746" column="65" selection-start-line="746" selection-start-column="65" selection-end-line="746" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="143" column="60" selection-start-line="143" selection-start-column="60" selection-end-line="143" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/__tests__/ProvidersController.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/RouteManagement/ProvidersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/__tests__/ProvidersNotifications.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3749">
+          <caret line="174" column="37" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/ProviderNotifications/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/__tests__/OperationsRouteRequest.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea/src/modules/slack/SlackPrompts/notifications/OperationsRouteRequest/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/__mocks__/driverMocks.ts" />
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/routes/routes-inventory/routes-inventory.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-edit-modal/driver-edit-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/__mocks__/driverMocks.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/__services__/drivers-inventory.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/__services__/drivers-inventory.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/provider-card/provider-card.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="76" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-edit-modal/driver-edit-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-edit-modal/driver-edit-modal.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="99" column="76" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-inventory/driver-inventory.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-card/driver-card.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/driver-modal/driver-modal.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/provider-modal/provider-modal.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/drivers/driver-inventory/driver-inventory.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/providers/driver-modal/driver-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-542" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tembea-frontend/src/app/admin/trips/display-trip-modal/display-trip-modal.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

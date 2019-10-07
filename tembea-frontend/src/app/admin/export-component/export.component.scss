@@ -1,0 +1,27 @@
+.upload-wrapper {
+  background-image: url("/assets/images/icons/export-icon.svg");
+  height: 29px;
+  width: 29px;
+}
+
+button {
+  border: none;
+}
+
+.action-button {
+  height: 46px;
+  min-width: 182px;
+  border: 1px solid rgba(128, 143, 163, 0.11);
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 7px 0 rgba(128, 143, 163, 0.11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  margin-bottom: 5px;
+
+  mat-icon {
+    color: #b9c5d1;
+  }
+}

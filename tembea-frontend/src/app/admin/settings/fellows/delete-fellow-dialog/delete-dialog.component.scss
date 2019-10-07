@@ -1,0 +1,84 @@
+.display-flex-center {
+  padding: 0 30px 0 40px;
+}
+
+p {
+  font-family: "DIN Pro";
+  text-align: left;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #39434D;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.header-subtitle {
+  color: #808FA3;
+  font-size: 14px;
+}
+
+.action-buttons {
+  width: 90%;
+  height: 50px;
+  border: 1px solid rgba(128, 143, 163, 0.11);
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px 0 rgba(128, 143, 163, 0.11);
+  font-family: "DIN Pro";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 7px 13.5px 10px 0px;
+  padding: 0;
+}
+
+.confirm {
+  background-color: #FF5359;
+  color: #FFFFFF;
+}
+
+.cancel {
+  background-color: #F1F4F5;
+  color: #7A8691;
+}
+
+.close-button {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  padding: 1.9px;
+  margin: 0 24px 0 0;
+  border: none;
+  color: #808FA3;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.card-image {
+  background-image: url('https://cdn.pixabay.com/photo/2016/05/12/23/03/lamb-1388937__340.png');
+  background-size: cover;
+}
+
+.card-body {
+  margin: 30px 0 30px 0;
+  width: 70%;
+}
+
+.modal-body {
+  width: 105%;
+}
+
+.card-body {
+  margin: 30px 9px;
+
+  @media screen and (min-width: 1240px) and (max-width: 1340px)
+      {
+        margin: 30px 39px;
+      }
+}

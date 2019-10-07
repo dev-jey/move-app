@@ -1,0 +1,46 @@
+.time {
+  color: #808FA3;
+}
+
+.buttons-wrapper {
+  margin-bottom: 1em;
+}
+
+.pagination {
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+.confirm-action-button {
+  border: none;
+  height: 20px;
+  width: 37px;
+  margin-top: 5px;
+
+  .confirm-icon {
+    background-color: #fff;
+    border: #fff;
+    background-image: url("/assets/images/icons/ic_confirm.svg");
+    height: 19px;
+    width: 19px;
+    display: inline-block;
+  }
+}
+.pending-table-head mat-grid-tile{
+  font-size: 14px;
+}
+
+.pending-table-body  {
+  cursor: pointer;
+  .time {
+    font-size: 16px;
+    text-align: left;
+    justify-content: start;
+  }
+  text-align: left;
+}
+
+.mat-grid-tile, .table-row-item, 
+.trip-table-head.mad-grid-tile, .trip-table-head  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

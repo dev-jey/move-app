@@ -1,0 +1,65 @@
+.container {
+  color: #39434d;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 44px;
+
+  .site-logo {
+    align-self: flex-start;
+    padding-left: 65px;
+    width: 102px;
+
+    @media screen and (max-width: 728px) {
+      padding-left: 30px;
+    }
+  }
+
+  @media screen and (max-width: 728px) {
+    padding-bottom: 50px;
+  }
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: -1.46px;
+}
+
+.main {
+  img {
+    width: 225px;
+  }
+}
+
+.details {
+  h3 {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: -0.94px;
+    line-height: 33px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.58px;
+    line-height: 21px;
+  }
+}
+
+.bottom-image {
+  background: url('../../assets/images/san-francisco-alt.png');
+  background-repeat: repeat-x;
+  background-size: auto 300px;
+  bottom: 0;
+  height: 300px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+}

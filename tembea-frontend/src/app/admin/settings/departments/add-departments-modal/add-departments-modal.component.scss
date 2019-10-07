@@ -1,0 +1,126 @@
+::ng-deep .mat-dialog-container {
+    height: 568px;
+    width: 592px;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 12px 0 rgba(83,89,98,0.12);
+}
+
+.text-danger{
+  color:#dc3545;
+}
+
+.add-department-modal {
+  padding: 0.2em 0;
+  margin: auto 1.5em;
+
+  .modal-header {
+
+    .closebutton {
+      box-sizing: border-box;
+      height: 8.06px;
+      width: 8.86px;
+      border: 1.6px solid #808FA3;
+      transform: scaleX(-1);
+    }
+    .close-button {
+      color: #808FA3;
+      border: none;
+      float: right;
+    }
+  }
+
+  .form-container {
+    padding: 0.4em;
+
+    form {
+      h2 {
+        font-weight: 300;
+        color: #39434D;
+        font-family: "DIN Pro";
+        font-size: 24px;
+        letter-spacing: -1.17px;
+        line-height: 31px;
+      }
+
+      label {
+        height: 17px;
+        color: #7A8691;
+        font-family: "DIN Pro";
+        font-size: 13px;
+        letter-spacing: 0.12px;
+        line-height: 17px;
+      }
+
+      .two.fields, .single-field {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .field {
+          width: 45%;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          &.single {
+            width: 100%;
+          }
+          .input-group {
+            // margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 48%;
+            label {
+              display: block;
+              margin-bottom: 0.3em;
+            }
+            input {
+              height: 45px;
+              width: 100%;
+              border: 1px solid #E9EFF4;
+              border-radius: 4px;
+              padding: 0 0.5em;
+              color: #999;
+              background-color: #FFFFFF;
+              // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 3px 2px 0 2px #4DA1FF;
+              
+              &.input-field {
+                box-sizing: border-box;
+                height: 46px;
+                width: 100%;
+              }
+
+              &.is_invalid {
+                border: 1px solid rgba(220, 53, 69, 0.5);
+                box-shadow: 0px 0px 1px 1px rgba(220, 53, 69, 0.7);
+                outline: none;
+              }
+            }
+
+          }
+        }
+      }
+
+      button {
+        height: 46px;
+        width: 100%;
+        margin-top: 1em;
+        border-radius: 5px;
+        background-color: #3359DB;
+        &:disabled {
+          background-color: #80808060;
+          cursor: not-allowed;
+        }
+        span {
+          height: 21px;
+          width: 245px;
+          color: #FFFFFF;
+          font-family: "DIN Pro";
+          font-size: 16px;
+          letter-spacing: 0.8px;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

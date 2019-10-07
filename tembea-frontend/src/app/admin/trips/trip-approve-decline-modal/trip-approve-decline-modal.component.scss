@@ -1,0 +1,172 @@
+.form-container {
+  margin: 0 50px 50px 50px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.close-button {
+  background-color: #ffffff;
+  margin: 0;
+  margin-right: 25px;
+  border: none;
+  color: #808FA3;
+}
+
+.close-button:hover {
+  color: #3359DB;
+  outline: 0;
+  cursor: pointer;
+}
+
+.close-button:focus {
+  color: #3359DB;
+  outline: 0;
+}
+
+.heading-one {
+  margin: 0;
+  font-weight: normal;
+  color: #39434D;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.message {
+  height: 17px;
+  color: #7A8691;
+  font-size: 13px;
+  margin: 28px 0 0 0;
+}
+
+.decline-comment {
+  outline: 0;
+  margin: 10.5px 0 0 0;
+  box-sizing: border-box;
+  height: 136px;
+  width: 100%;
+  border: 1px solid #E9EFF4;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.decline-comment:focus {
+  padding: 10px;
+  border: 1px solid #3359DB;
+}
+
+.submit-btn {
+  height: 46px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #3359DB;
+  color: white;
+  margin: 39.5px 0 0 0;
+  outline: 0;
+}
+
+.button-hover:hover {
+  cursor: pointer;
+}
+
+.submit-btn:disabled{
+  background-color: #808FA3;
+  cursor: default;
+}
+
+.form-input{
+  height: 46px;
+  width: 95%;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid #E9EFF4;
+}
+.message-row{
+  color: #7A8691;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 20px 0 3px 0;
+  @media screen and (max-width: 600px) {
+    & {
+      width: 100%;
+    }
+  }
+}
+
+.input-row{
+  justify-content: space-between;
+  width: 60%;
+  border-top-style: none;
+  padding:6px 0 0 24px;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 600px) {
+    & {
+      width: 95%;
+    }
+  }
+
+}
+.number-input{
+  width: 80px;
+  height: 40px;
+  border: 1px solid #E9EFF4;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+.time-input{
+  width: 80px;
+  height: 40px;
+  border: 1px solid #E9EFF4;
+  padding-left: 20px;
+  font-size: 18px;
+  @media screen and (max-width: 600px) {
+    & {
+      margin-left: 20px;
+    }
+  }
+}
+
+.plate-input{
+  height: 46px;
+  width: 95%;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid #E9EFF4;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cab-name {
+  color: #39434D;
+  font-family: "DIN Pro";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.body-text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+/* Mobile in portrait and landscape mode*/
+@media all and (max-width: 650px) {
+  .cabs-container{
+    margin-bottom: 5px;
+  }
+  .cab-list {
+    margin-bottom: 5px;
+  }
+}

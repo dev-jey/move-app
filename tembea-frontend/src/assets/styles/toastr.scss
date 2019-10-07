@@ -1,0 +1,49 @@
+div#toast-container {
+    top: 27px;
+}
+
+#toast-container>div:hover {
+    -moz-box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    box-shadow:none !important;
+}
+
+#toast-container {
+    .toast-error {
+    box-sizing: border-box;
+    background-color: #FFE2E3;
+    border-radius: 11px;
+    height: 60px;
+    border: 1px solid rgba(255,83,89,0.35);
+    box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+    background-image: url("/assets/images/icons/red-alert-icon.svg")!important;
+    }
+    .toast-success {
+        box-sizing: border-box;
+        background-color: #E0F3EC;
+        border-radius: 11px;
+        height: 60px;
+        border: 1px solid rgba(16,163,109,0.21);
+        box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+        background-image: url("/assets/images/icons/green-alert-icon.svg")!important;
+        text-align: center;
+    }
+    .toast-warning {
+        box-sizing: border-box;
+        background-color: #E0F3EC;
+        border-radius: 11px;
+        height: 60px;
+        border: 1px solid rgba(16,163,109,0.21);
+        box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+        background-image: url("/assets/images/icons/yellow-alert-icon.svg")!important;
+    }
+    div {
+        opacity: 1;
+        line-height: normal;
+    }
+}
+
+.toast-message {	
+    font-family: "DIN Pro";
+    color: #39434D;
+}

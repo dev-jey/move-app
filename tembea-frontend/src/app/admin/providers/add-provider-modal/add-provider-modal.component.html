@@ -1,0 +1,62 @@
+<div class="add-provider-modal">
+  <div class="modal-header">
+    <button class="close-button button-hover" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class="form-container">
+    <form #addForm="ngForm" (ngSubmit)="addProvider()">
+      <span class="modal-title">Add A Provider</span>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="name">What's the Provider's Name?</label>
+            <input
+              required
+              [(ngModel)]="providerData.name"
+              id="name"
+              name="name"
+              placeholder="WillGreen Cabs"
+              pattern="^[a-zA-Z\s]+$"
+              [class.is_invalid]="name.invalid && name.touched"
+              #name="ngModel"/>
+            <div *ngIf="name.errors && (name.touched && name.invalid)">
+              <small class="text-danger" *ngIf="name?.errors.required">Provider's Name is required</small>
+              <small class="text-danger" *ngIf="name?.errors.pattern">Please provide a valid Provider's Name</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="email">Provider User's Email</label>
+            <input
+              required
+              id="email"
+              name="email"
+              placeholder="john.doe@company.com"
+              [(ngModel)]="providerData.email"
+              type="email"
+              email
+              [class.is_invalid]="email.invalid && email.touched"
+              #email="ngModel"/>
+              <div *ngIf="email.errors && (email.touched && email.invalid)">
+              <small class="text-danger" *ngIf="email?.errors.required">email field is required</small>
+              <small class="text-danger" *ngIf="email?.errors.email">email is invalid</small>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="loading || addForm.invalid">
+        <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+        &nbsp;
+        <span>Submit</span>
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.fellows-page-container {
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.fellows {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1450px) {
+    justify-content: space-evenly;
+  }
+}
+
+.bottom-image {
+  background-image: url("/assets/images/san-francisco.png");
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  background-size: 600px 250px;
+  background-repeat: repeat-x;
+  position: fixed;
+}
+
+app-fellow-card {
+  margin-right: 60px;
+  margin-bottom: 35px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 12px !important;
+  }
+
+  @media screen and (min-width: 1450px) {
+    margin-right: 60px !important;
+  }
+}

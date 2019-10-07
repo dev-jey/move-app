@@ -1,0 +1,34 @@
+<div>
+  <div class="loader" *ngIf="isLoading === true"></div>
+  <div *ngIf="!isLoading && !fellows">
+    <app-empty-page [text]='displayText'></app-empty-page>
+    <div class="bottom-image"></div>
+  </div>
+  <div *ngIf="fellows">
+    <div class="fellows-page-container">
+      <div class="fellows">
+        <app-fellow-card
+          *ngFor="let fellow of fellows"
+          [userId]="fellow.id"
+          [name]="fellow.name"
+          [image]="fellow.image"
+          [partner]="fellow.partner"
+          [tripsTaken]="fellow.tripsTaken"
+          [startDate]="fellow.startDate"
+          [endDate]="fellow.endDate"
+          [showRemoveIcon]="showRemoveIcon"
+          [showAddIcon]="showAddIcon"
+          (removeFellow)="loadFellows()">
+        </app-fellow-card>
+      </div>
+      <div class="pagination">
+        <app-pagination
+          *ngIf="totalItems > pageSize"
+          [totalItems]="totalItems"
+          (pageChange)="setPage($event)"
+          [pageSize]="pageSize"
+        ></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>

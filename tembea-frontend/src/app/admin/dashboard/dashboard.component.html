@@ -1,0 +1,38 @@
+<div>
+  <div fxLayoutGap="13.5px" fxLayout.lt-sm="column wrap" class="date-picker">
+    <app-date-picker
+      (selectedDateChange)="setDateFilter('startDate', 'from', $event)"></app-date-picker>
+
+    <app-date-picker
+      (selectedDateChange)="setDateFilter('endDate', 'to', $event)"></app-date-picker>
+  </div>
+  <div fxLayout="column">
+    <div class="dashboard-top-container">
+    </div>
+    <div class="dashboard-middle-container">
+    </div>
+    <div class="background">
+      <div fxLayout="column wrap" fxLayoutGap="5px" fxLayoutAlign="start start" class="card-position">
+        <div>
+          <h3 class="routes-title">ROUTES OVERVIEW</h3>
+        </div>
+        <div class="most-ratings-usage" >
+          <div fxLayout="row" fxLayout.xs="column"  fxLayoutAlign="center" >
+            <app-routes-overview usage="Most" [data]="mostUsedRoute" ></app-routes-overview>
+            <app-route-ratings-overview class="card-position" [title]="'Most Rated Routes'" [ratings]="mostRatedRoutes" ></app-route-ratings-overview>
+          </div>
+        </div>
+
+        <div>
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+            <app-routes-overview usage="Least" [data]="leastUsedRoute"></app-routes-overview>
+            <app-route-ratings-overview class="card-position" [title]="'Least Rated Routes'" [ratings]="leastRatedRoutes" ></app-route-ratings-overview>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

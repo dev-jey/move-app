@@ -1,0 +1,31 @@
+<div class="modal-header">
+  <button class="close-button button-hover" (click)="closeDialog()">
+    &#x2715;
+  </button>
+</div>
+<div class=form-container>
+  <form *ngIf="data.status === 0" #approveForm="ngForm" (ngSubmit)="confirm(approveForm.value)" novalidate>
+    <h1 class="heading-one">Confirm {{data.requesterFirstName | titlecase}}'s Trip</h1>
+    <p class="message">Assign a Provider</p>
+    <input required [(ngModel)]="providerName" (change)="clearFields($event)" class="form-input" type="text"
+       placeholder="Choose a provider" aria-label="Provider" matInput [matAutocomplete]="auto">
+    <app-select-provider optionValue="name" [approveForm]="approveForm" (clickedProviders)="clickedProviders($event)"
+      (emitAutoComplete)="setAuto($event)">
+    </app-select-provider>
+    <p class="message">Confirmation Reason</p>
+    <textarea required (ngModel)="comment" name="comment" class="decline-comment"></textarea>
+    <button type="submit" [disabled]="approveForm.invalid || loading" class="submit-btn button-hover">
+      <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+      SUBMIT
+    </button>
+  </form>
+  <form #declineForm="ngForm" (ngSubmit)="decline(declineForm.value)" *ngIf="data.status === 1" novalidate>
+    <h1 class="heading-one">Decline {{data.requesterFirstName | titlecase}}'s Trip</h1>
+    <p class="message">Hi {{account.firstName | titlecase}}, why are you declining?</p>
+    <textarea required (ngModel)="comment" name="comment" class="decline-comment"></textarea>
+    <button type="submit" [disabled]="declineForm.invalid || loading" class="submit-btn button-hover">
+      <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+      SUBMIT
+    </button>
+  </form>
+</div>

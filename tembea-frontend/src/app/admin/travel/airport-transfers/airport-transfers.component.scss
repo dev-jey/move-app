@@ -1,0 +1,90 @@
+.filter-item {
+    margin-bottom: 20px;
+    input {
+        display: block;
+    }
+    span {
+        display: block;
+    }
+}
+.selector {
+    display: inline-block;
+}
+
+
+// tablets
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+    .filter-block {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .filter-item {
+        flex: auto;
+        width: 361px;
+    }
+}
+
+// larger screen
+@media only screen and (min-width: 1140px) {
+    .filter-top {
+        display: flex;
+        flex-direction: row;
+    }
+    .filter-block {
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+    }
+    .filter-item {
+        flex: auto;
+    }
+}
+
+.filter-top {
+  padding-left: 10px;
+}
+// for table
+.trips-table {
+    width: 98%;
+    margin: 2rem auto;
+
+  .mat-grid-tile .mat-figure{
+      justify-content: start;
+    }
+    .trip-align-cell{
+      position: absolute;
+      left: 30px;
+    }
+  }
+
+  mat-icon {
+    color: white;
+  }
+
+  .pagination {
+    margin-bottom: 2rem;
+  }
+  /* Mobile in portrait and landscape mode*/
+  @media all and (max-width: 1140px) {
+    .trips-container{
+      width: 100%;
+      overflow-x: scroll;
+    }
+    .trips-table{
+      margin: 0 auto;
+        min-width: 1094px;
+    }
+    mat-grid-list {
+      height: 15px;
+      padding: 10px;
+    }
+    mat-grid-tile{
+      padding: 1.5rem 0rem;
+    }
+  }
+
+  .app-custom-dropdown {
+    max-width: 20px;
+  }
+

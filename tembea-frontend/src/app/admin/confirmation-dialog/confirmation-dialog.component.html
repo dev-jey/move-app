@@ -1,0 +1,26 @@
+<div class="logout-modal">
+<div class="modal-header">
+  <button class="close-button display-flex-center" (click)="closeDialog()">
+    &#x2715;
+  </button>
+</div>
+<div>
+  <p>
+    Are you sure you want to {{displayText}}?
+  </p>
+  <div class="action-buttons-wrapper display-flex-center">
+    <button class="action-buttons display-flex-center cancel" (click)="closeDialog()">
+      <div class="arrow-icon-wrapper left-wrapper display-flex-center">
+        <div class="left button-icon-size"></div>
+      </div>
+      Cancel
+    </button>
+    <button mat-dialog-close class="action-buttons display-flex-center confirm" (click)="confirmDialog()">
+      {{confirmText}}
+      <div class="arrow-icon-wrapper right-wrapper display-flex-center">
+        <div class="right button-icon-size"></div>
+      </div>
+    </button>
+  </div>
+</div>
+</div>

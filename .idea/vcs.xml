@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/tembea" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tembea-frontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tembea/dist" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/x/tembea" vcs="Git" />
+  </component>
+</project>

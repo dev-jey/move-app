@@ -1,0 +1,13 @@
+<div class="route-ratings">
+<mat-card class="route-ratings-container">
+    <h2 class="top-rated-route">{{title}}</h2>
+  <h3 *ngIf="ratings.length === 0">No Rating Data Available</h3>
+  <mat-card-content *ngFor="let rating of ratings">
+    <div class="ratings">
+     <div class="route-name">{{rating.Route}} {{rating.RouteBatchName}}</div>
+      <app-rating-stars [rating]="rating.Average"></app-rating-stars>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>
+

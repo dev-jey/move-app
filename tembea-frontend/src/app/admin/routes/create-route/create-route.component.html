@@ -1,0 +1,114 @@
+<div class="welcome-text">
+  <p>Hi User, what route would you like to create?</p>
+</div>
+<section class="create-route-section">
+  <article class="form-subsection">
+    <div class="create-route-form-wrapper">
+      <form
+        #createRouteForm="ngForm"
+        (ngSubmit)="createRoute()"
+        class="create-route-form"
+        method="post"
+        novalidate>
+        <div class="label-input-wrapper">
+          <label for="">Route name</label>
+          <em *ngIf="routeName?.invalid
+            && (routeName?.touched || mouseoverCreateButton)">Required</em>
+          <input
+            type="text"
+            [(ngModel)]="model.routeName"
+            name="routeName"
+            placeholder="Give this route a name"
+            required #routeName="ngModel">
+        </div>
+        <div class="label-input-wrapper">
+          <label for="destination">Destination</label>
+          <em *ngIf="destinationForm?.invalid
+            && (destinationForm?.touched || mouseoverCreateButton)">Required</em>
+          <input #destinationFormInput type="text"
+            [(ngModel)]="model.destinationInputField"
+            (change)="clearDestinationCoordinates()"
+            name="destination"
+            placeholder="Where are we headed captain?"
+            required #destinationForm="ngModel">
+          <div class="search-button">
+            <button type="button" (click)="showRouteDirectionOnClick()" name="search" id="search">
+              <span class="search-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="label-input-wrapper">
+          <label for="takeOffTime">Take-off Time</label>
+          <em *ngIf="(takeOffTime?.invalid
+            && (takeOffTime?.touched || mouseoverCreateButton))"
+          >Required</em>
+          <input
+            type="text"
+            [(ngModel)]="model.takeOffTime"
+            name="takeOffTime"
+            placeholder="e.g 23:00"
+            required #takeOffTime="ngModel">
+        </div>
+        <div class="label-input-wrapper">
+          <label for="capacity">Capacity</label>
+          <em *ngIf="capacity?.invalid
+            && (capacity?.touched || mouseoverCreateButton)"
+          >Required</em>
+          <input
+            type="number"
+            [(ngModel)]="model.capacity"
+            name="capacity"
+            min="1"
+            value="1"
+            required #capacity="ngModel">
+          <div class="change-value-button">
+            <div id="increment" (click)="changeCapacityValue('incrementCapacity')">
+              <span class="increment-icon">+</span>
+            </div>
+            <div id="decrement" (click)="changeCapacityValue('decrementCapacity')">
+              <span class="decrement-icon">-</span>
+            </div>
+          </div>
+        </div>
+        <div class="label-input-wrapper">
+          <label for="vehicle">Vehicle</label>
+          <em *ngIf="vehicle?.invalid
+            && (vehicle?.touched || mouseoverCreateButton)"
+          >Required</em>
+          <input
+            type="text"
+            [(ngModel)]="model.vehicle"
+            name="vehicle"
+            placeholder="Vehicle registration number"
+            required #vehicle="ngModel">
+        </div>
+        <div
+          class="button-wrapper"
+          (mouseenter)="mouseoverCreateButton=true"
+          (mouseleave)="mouseoverCreateButton=false">
+          <button
+            type="submit"
+            [disabled]="createRouteForm.invalid"
+            name="submit"
+          >CREATE ROUTE</button>
+        </div>
+      </form>
+    </div>
+  </article>
+  <article class="map-subsection">
+    <div class="map-wrapper">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker
+          [latitude]="lat"
+          [longitude]="lng"
+          [markerDraggable]="true"
+          (dragEnd)="updateDestinationFieldOnMarkerDrag(model.marker, $event)"></agm-marker>
+        <agm-direction
+          *ngIf="!destinationIsDojo"
+          [origin]="origin"
+          [destination]="destination"></agm-direction>
+      </agm-map>
+    </div>
+  </article>
+</section>
+<div class="bottom-image"></div>

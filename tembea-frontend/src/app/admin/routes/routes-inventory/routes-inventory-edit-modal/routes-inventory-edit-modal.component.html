@@ -1,0 +1,148 @@
+<div class="edit-route-modal">
+  <div class="modal-header">
+      <button class="close-button button-hover" (click)="closeDialog()">
+        &#x2715;
+      </button>
+    </div>
+    <div class=form-container>
+        <form #editForm="ngForm" (ngSubmit)="editRoute(editForm.value)" novalidate>
+          <h2>Edit a Route</h2>
+          <div class="single-field">
+              <div class="field single">
+                  <div class="input-group">
+                    <label for="name" class="route">Route</label>
+                    <input 
+                    id="name" 
+                    disabled
+                    [ngModel]="data.name" 
+                    name="name" />
+                </div>
+              </div>
+          </div>
+        
+          <div class="two fields">
+            <div class="field">
+                <div class="input-group">
+                  <label for="batch" >Batch</label>
+                  <input 
+                  id="batch" 
+                  required
+                  disabled
+                  pattern="[A-Za-z]"
+                  [ngModel]="data.batch" 
+                  #batch='ngModel'
+                  [class.is_invalid]="batch.invalid && batch.touched"
+                  name="batch" />
+                  <div *ngIf="batch.errors && (batch.touched && batch.invalid)">
+                    <small class="text-danger" *ngIf="batch?.errors.required">batch field is required</small>
+                    <small class="text-danger" *ngIf="batch?.errors.pattern">batch field cannot contain number and special characters</small>
+                  </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-group addon">
+                  <label for="takeOff">Take-off</label>
+                  <div class="dropdown">
+                    <input 
+                    id="takeOff" 
+                    type="text"
+                    required
+                    pattern="^([01]\d|2[0-3]):?([0-5]\d)$"
+                    placeholder="e.g 23:00"
+                    name="takeOff"
+                    #takeOff='ngModel'
+                    [class.is_invalid]="takeOff.invalid && takeOff.touched"
+                    [ngModel]="data.takeOff">
+                  </div>
+                  <div *ngIf="takeOff.errors && (takeOff.touched && takeOff.invalid)">
+                    <small class="text-danger" *ngIf="takeOff?.errors.required">takeOff field is required</small>
+                    <small class="text-danger" *ngIf="takeOff?.errors.pattern">takeOff field should be in 24hr format</small>
+                  </div>
+               </div>
+            </div>
+          </div>
+          <div class="two fields">
+              <div class="field">
+                <div class="input-group">
+                    <label for="capacity">Capacity</label>
+                    <input id="capacity" 
+                    required
+                    pattern="^[0-9]*$"
+                    [ngModel]="data.capacity" 
+                    name="capacity" 
+                    #capacity='ngModel'
+                    [class.is_invalid]="capacity.invalid && capacity.touched"
+                    />
+                    <div *ngIf="capacity.errors && (capacity.touched && capacity.invalid)">
+                      <small class="text-danger" *ngIf="capacity?.errors.required">capacity field is required</small>
+                      <small class="text-danger" *ngIf="capacity?.errors.pattern">capacity field can only contain numbers</small>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="field">
+                  <div class="input-group">
+                    <label for="inUse">In-Use</label>
+                    <input 
+                    id="inUse" 
+                    required
+                    disabled
+                    pattern="^[0-9]*$"
+                    [ngModel]="data.inUse"
+                    #inUse='ngModel'
+                    [class.is_invalid]="inUse.invalid && inUse.touched"
+                    name="inUse" />
+                    <div *ngIf="inUse.errors && (inUse.touched && inUse.invalid)">
+                      <small class="text-danger" *ngIf="inUse?.errors.required">inUse field is required</small>
+                      <small class="text-danger" *ngIf="inUse?.errors.pattern">inUse field can only contain numbers</small>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="two fields">
+              <div class="field">
+                  <div class="input-group">
+                    <label for="regNumber" class="vehicle">Vehicle</label>
+                    <input 
+                    id="regNumber" 
+                    required
+                    pattern="^[a-zA-Z0-9 ]*$"
+                    [ngModel]="data.regNumber"
+                    #regNumber='ngModel'
+                    [class.is_invalid]="regNumber.invalid && regNumber.touched"
+                    name="regNumber" />
+                    <div *ngIf="regNumber.errors && (regNumber.touched && regNumber.invalid)">
+                      <small class="text-danger" *ngIf="regNumber?.errors.required">Vehicle field is required</small>
+                      <small class="text-danger" *ngIf="regNumber?.errors.pattern">vehicle field cannot contain special characters</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                    <div class="input-group addon">
+                      <label for="status">Status</label>
+                      <select 
+                      id="status" 
+                      name="status"
+                      #status ='ngModel'
+                      [class.is_invalid]="status .invalid"
+                      [ngModel]="data.status">
+                          <option>Active</option>
+                          <option>Inactive</option>
+                      </select>
+                      <div *ngIf="status.errors && (status.touched || status.invalid)">
+                        <small class="text-danger" *ngIf="status?.errors.required">status field is required</small>
+                        <!-- <small *ngIf="name.errors.pattern">Name field can only contain alphabet characters</small> -->
+                      </div>
+                  </div>
+                </div>
+          </div>
+          <button 
+          type="submit" 
+          class="save-changes" 
+          [disabled]="loading || editForm.invalid">
+              <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+            <span>SAVE CHANGES</span>
+          </button>
+        </form>
+      </div>      
+</div>

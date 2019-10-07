@@ -1,0 +1,62 @@
+<div class="add-cab-modal">
+  <div class="modal-header">
+    <button class="close-button button-hover" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class="form-container">
+    <form #addForm="ngForm" (ngSubmit)="addCab()">
+      <span class="modal-title">{{ modalHeader }} Vehicle</span>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="regNumber">Vehicle Registration Number?</label>
+            <input required placeholder="FKJ-38298" [(ngModel)]="cabData.regNumber" id="regNumber" name="regNumber"
+              pattern="^[a-zA-Z][A-Za-z0-9- ,]+$" [class.is_invalid]="regNumber.invalid && regNumber.touched"
+              #regNumber="ngModel" />
+            <div *ngIf="regNumber.errors && (regNumber.touched && regNumber.invalid)">
+              <small class="text-danger" *ngIf="regNumber?.errors.required">Vehicle Registration Number is
+                required</small>
+              <small class="text-danger" *ngIf="regNumber?.errors.pattern">please provide a valid Vehicle Registration
+                Number</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="model">What's the Vehicle Model?</label>
+            <input required [(ngModel)]="cabData.model" placeholder="Toyota Corolla" id="model" name="model"
+              pattern="^[^-\s][a-zA-Z0-9-_\s]+$" [class.is_invalid]="model.invalid && model.touched" #model="ngModel" />
+            <div *ngIf="model.errors && (model.touched && model.invalid)">
+              <small class="text-danger" *ngIf="model?.errors.required">Vehicle Model is required</small>
+              <small class="text-danger" *ngIf="model?.errors.pattern">please provide a valid Vehicle Model</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group type-number">
+            <label for="capacity">What's the Seat Capacity?</label>
+            <input placeholder="6" required type="number" [(ngModel)]="cabData.capacity" min="1" id="name"
+              name="capacity" pattern="^[1-9]+$" [class.is_invalid]="capacity.invalid && capacity.touched"
+              #capacity="ngModel" />
+            <div *ngIf="capacity.errors && (capacity.touched && capacity.invalid)">
+              <small class="text-danger" *ngIf="capacity?.errors.required">Capacity is required</small>
+              <small class="text-danger" *ngIf="capacity?.errors.pattern">number must be valid and greater than
+                0</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="loading || addForm.invalid">
+        <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+        &nbsp;
+        <span>SAVE</span>
+      </button>
+    </form>
+  </div>
+
+</div>

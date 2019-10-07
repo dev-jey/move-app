@@ -1,0 +1,101 @@
+<div class="add-department-modal">
+  <div class="modal-header">
+    <button class="close-button button-hover" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class=form-container>
+    <form #driverForm="ngForm" (ngSubmit)="editDriver(driverForm, data.id, data.providerId)">
+      <span class="modal-title">Edit Driver</span>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="name">What's the new name?</label>
+            <input
+              required
+              id="name"
+              name="name"
+              pattern="^[a-zA-Z0-9\s,+-]+$"
+              [(ngModel)]="data.name"
+              #name=ngModel
+             />
+          </div>
+          <div *ngIf="name.errors && (name.touched && name.invalid)">
+            <small class="text-danger" *ngIf="name?.errors.required">Name field is required</small>
+            <small class="text-danger" *ngIf="name?.errors.pattern">Please provide a valid driver name</small>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="email">What's the new email?</label>
+            <input
+              required
+              id="email"
+              name="email"
+              type="email"
+              [(ngModel)]="data.email"
+              #email=ngModel
+              email
+            />
+          </div>
+          <div *ngIf="email.errors && (email.touched && email.invalid)">
+            <small class="text-danger" *ngIf="email?.errors.required">Email field is required</small>
+            <small class="text-danger" *ngIf="email?.errors.email">Email is invalid</small>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+          <div class="field single">
+            <div class="input-group">
+              <label for="driverNumber">What's the new driver number?</label>
+              <input
+                required
+                id="driverNumber"
+                name="driverNumber"
+                pattern="^\w+$"
+                [class.is_invalid]="driverNumber.invalid && driverNumber.touched"
+                type="text"
+                [(ngModel)]="data.driverNumber"
+                #driverNumber=ngModel
+                driverNumber
+              />
+            </div>
+            <div *ngIf="driverNumber.errors && (driverNumber.touched && driverNumber.invalid)">
+                <small class="text-danger" *ngIf="driverNumber?.errors.required">Driver number field is required</small>
+                <small class="text-danger" *ngIf="driverNumber?.errors.pattern">Please provide a valid driver number</small>
+              </div>
+          </div>
+        </div>
+        <div class="single-field">
+            <div class="field single">
+              <div class="input-group">
+                <label for="driverPhoneNo">What's the new driver phone number?</label>
+                <input
+                  required
+                  pattern="^[0-9\s,+-]+$"
+                  [class.is_invalid]="driverPhoneNo.invalid && driverPhoneNo.touched"
+                  id="driverPhoneNo"
+                  name="driverPhoneNo"
+                  type="text"
+                  [(ngModel)]="data.driverPhoneNo"
+                  #driverPhoneNo=ngModel
+                  driverPhoneNo
+                />
+              </div>
+              <div *ngIf="driverPhoneNo.errors && (driverPhoneNo.touched && driverPhoneNo.invalid)">
+                  <small class="text-danger" *ngIf="driverPhoneNo?.errors.required">Driver number field is required</small>
+                  <small class="text-danger" *ngIf="driverPhoneNo?.errors.pattern">Please provide a valid driver number</small>
+                </div>
+            </div>
+          </div>
+      <button
+        type="submit"
+        [disabled]="loading || driverForm.invalid">
+        <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+        <span>Submit</span>
+      </button>
+    </form>
+  </div>
+</div>

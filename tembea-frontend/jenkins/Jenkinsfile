@@ -1,0 +1,162 @@
+#!groovy
+
+// define the images and resources to be used in running the pipeline
+pipeline {
+  agent{
+    kubernetes {
+      label 'tembea-frontend'
+      defaultContainer 'jnlp'
+      yaml """
+        apiVersion: v1
+        kind: Pod
+        metadata:
+        labels:
+          component: ci
+        spec:
+          containers:
+          - name: tembea-frontend-agent
+            image: eu.gcr.io/${TEMBEA_AGENT_GCP_PROJECT_ID}/tembea-jenkins-frontend
+            resources:
+              requests:
+                cpu: "2000m"
+                memory: "2Gi"
+            command:
+            - cat
+            tty: true
+            env:
+              - name: DOCKER_HOST
+                value: tcp://localhost:2375
+          - name: dind
+            image: docker:18.05-dind
+            securityContext:
+              privileged: true
+            volumeMounts:
+              - name: dind-storage
+                mountPath: /var/lib/docker
+          volumes:
+          - name: dind-storage
+            emptyDir: {}
+        """
+    }
+  }
+
+  // This stage makes all bash scripts in the scripts directory executable
+  stages {
+    stage('Make bash scripts executable'){
+      steps {
+        container('tembea-frontend-agent'){
+          sh "chmod u+x jenkins/scripts/*"
+        }
+      }
+    }
+
+  // Load the environment variables to be used in the testing and deployment of the application image
+    stage('Load deployment environment variables') {
+      steps {
+        container('tembea-frontend-agent') {
+          withCredentials([
+            file(credentialsId: 'tembea-frontend-deployment-env', variable: 'TEMBEA_FRONTEND_DEPLOYMENT_ENV')
+          ]) {
+            load "$TEMBEA_FRONTEND_DEPLOYMENT_ENV"
+          }
+        }
+      }
+    }
+
+    // Install npm modules/dependencies for running the application
+    stage('Install dependencies') {
+      steps {
+        container('tembea-frontend-agent') {
+          sh "yarn install"
+        }
+      }
+    }
+
+  // Download the test reporter
+  // Tun the tests and push the test coverage to codeclimate
+    stage('Test and Report') {
+      steps {
+        container('tembea-frontend-agent') {
+          withCredentials([
+            file(credentialsId: 'tembea-frontend-deployment-env', variable: 'TEMBEA_FRONTEND_ENV')
+          ]) {
+            sh "curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter"
+            sh "chmod +x ./cc-test-reporter"
+            sh "./cc-test-reporter before-build"
+            sh "yarn test --coverage"
+            sh './cc-test-reporter after-build --exit-code $?'
+          }
+        }
+      }
+    }
+
+    // Login to CCP using the login bash script
+    // This stage is executed only for the master and staging branches
+    stage('login to gcp') {
+      when {
+        anyOf {
+          branch 'master'
+          branch 'develop'
+        }
+      }
+      steps {
+        container('tembea-frontend-agent') {
+          sh "chmod +x jenkins/scripts/gcp_login.sh"
+          sh "jenkins/scripts/gcp_login.sh main"
+        }
+      }
+    }
+
+    // Build the image for deployment and push it to GCR
+    // This stage is executed only for the master and staging branches
+    stage('Docker build and push') {
+      when {
+        anyOf {
+          branch 'master'
+          branch 'develop'
+        }
+      }
+      steps {
+        container('tembea-frontend-agent') {
+          sh "jenkins/scripts/build_and_push.sh"
+        }
+      }
+    }
+
+
+    // Pull the image for the application from GCP and deploy using  kubernetes
+    // This stage is executed only for the master and staging branches
+    stage('Deploy') {
+      when {
+        anyOf {
+          branch 'master'
+          branch 'develop'
+        }
+      }
+      steps {
+        container('tembea-frontend-agent') {
+            sh "chmod +x jenkins/scripts/deploy.sh"
+            sh "jenkins/scripts/deploy.sh main"
+        }
+      }
+    }
+  }
+
+
+  // Execute these stages if the pipeline is successful or fails
+  post {
+    // Send a failure notification if the pipeline fails
+    failure {
+      container('tembea-frontend-agent') {
+        sh "jenkins/scripts/slack_notification.sh send_failure_notification"
+      }
+    }
+
+    // Send a success notification if the pipeline is executed successfuly
+    success {
+      container('tembea-frontend-agent'){
+        sh "jenkins/scripts/slack_notification.sh send_success_notification"
+      }
+    }
+  }
+}

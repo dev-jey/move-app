@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>E8D57995-E20D-4DE3-B362-CBD28D2BE6E6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Web-App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-&gt;-Logout-&gt;-Confirm" transform="translate(-862.000000, -438.000000)" fill="#FF5359" fill-rule="nonzero">
+            <g id="Modal" transform="translate(424.000000, 273.000000)">
+                <g id="Group" transform="translate(315.000000, 146.000000)">
+                    <g id="ic_logout" transform="translate(118.000000, 14.000000)">
+                        <path d="M11.0743904,5.6035026 C10.6150821,5.15248803 9.87266446,5.15472393 9.41641723,5.60823513 L6.34635926,8.6598824 C5.09387076,9.9168524 6.97276956,11.802474 8.22525803,10.545504 L8.23763396,10.5329389 C8.6245928,10.1400646 8.9382849,10.2711194 8.9382849,10.8232911 L8.9382849,13.2689428 C8.9382849,14.0040654 9.53458903,14.6 10.2746172,14.6 L10.2590483,14.6 C10.9970842,14.6 11.5953806,14.004471 11.5953806,13.2689428 L11.5953806,10.8232911 C11.5953806,10.2700597 11.9100534,10.1412092 12.2957051,10.5329389 L12.3080753,10.545504 C13.5605638,11.802474 15.4394626,9.9168524 14.1869741,8.6598824 L11.0743904,5.6035026 Z" id="Path" transform="translate(10.266667, 9.933333) rotate(90.000000) translate(-10.266667, -9.933333) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

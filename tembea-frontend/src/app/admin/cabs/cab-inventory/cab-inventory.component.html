@@ -1,0 +1,62 @@
+<div *ngIf="cabs.length === 0  && !isLoading">
+  <app-empty-page [text]='displayText'></app-empty-page>
+  <div class="bottom-image"></div>
+</div>
+<div *ngIf="cabs.length > 0">
+  <div class="cabs-grid-container xl-width">
+    <mat-grid-list cols="4" rowHeight="145px">
+      <mat-grid-tile *ngFor='let cab of cabs; index as ind' >
+        <app-cab-card
+          [id]="cab.id"
+          [model]="cab.model"
+          [regNumber]="cab.regNumber"
+          [capacity]="cab.capacity"
+          [providerId]="cab.providerId"
+          [hidden]="currentOptions !== ind"
+          [showMoreIcon]="true"
+          (showOptions)="showOptions(ind)"
+          (refreshWindow)="getInventory()">
+        </app-cab-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div class="cabs-grid-container l-width">
+    <mat-grid-list cols="2" rowHeight="145px">
+      <mat-grid-tile *ngFor='let cab of cabs; index as ind' >
+        <app-cab-card
+          [id]="cab.id"
+          [model]="cab.model"
+          [regNumber]="cab.regNumber"
+          [capacity]="cab.capacity"
+          [providerId]="cab.providerId"
+          [hidden]="currentOptions !== ind"
+          [showMoreIcon]="true"
+          (showOptions)="showOptions(ind)"
+          (refreshWindow)="getInventory()">
+        </app-cab-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="cabs-grid-container sm-width">
+    <mat-grid-list cols="1" rowHeight="145px">
+      <mat-grid-tile *ngFor='let cab of cabs; index as ind' >
+        <app-cab-card
+          [id]="cab.id"
+          [model]="cab.model"
+          [regNumber]="cab.regNumber"
+          [capacity]="cab.capacity"
+          [providerId]="cab.providerId"
+          [hidden]="currentOptions !== ind"
+          [showMoreIcon]="true"
+          (showOptions)="showOptions(ind)"
+          (refreshWindow)="getInventory()">
+        </app-cab-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="pagination">
+    <app-pagination *ngIf='totalItems > pageSize' [totalItems]="totalItems" (pageChange)="setPage($event)"
+                    [pageSize]="pageSize"></app-pagination>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+#unauthauthorized-modal {
+  min-height: 401px;
+  min-width: 556px;
+  .mat-dialog-content {
+    text-align: center;
+    color: #4F4F4F;
+    .banner {
+      height: 171px;
+      width: 232px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 31px;
+      margin-block-start: 2rem;
+      margin-block-end: 1.25rem;
+    }
+    p {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      line-height: 21px;
+    }
+  }
+}

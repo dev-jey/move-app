@@ -1,0 +1,77 @@
+<div class="add-cab-modal">
+  <div class="modal-header">
+    <button class="close-button button-hover" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class="form-container">
+    <form #addForm="ngForm" (ngSubmit)="addDriver(addForm)">
+      <span class="modal-title">Add a Driver</span>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="driverName">What's the Driver's Name?</label>
+            <input required ngModel id="driverName" name="driverName" pattern="^[a-zA-Z\s]+$"
+                   [class.is_invalid]="driverName.invalid && driverName.touched" #driverName="ngModel" />
+            <div *ngIf="driverName.errors && (driverName.touched && driverName.invalid)">
+              <small class="text-danger" *ngIf="driverName?.errors.required">Driver's Name is required</small>
+              <small class="text-danger" *ngIf="driverName?.errors.pattern">please provide a valid Driver's Name</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="driverNumber">What's the Driver's Identification Number?</label>
+            <input required placeholder="FKJ-38298" ngModel id="driverNumber" name="driverNumber"
+                    [class.is_invalid]="driverNumber.invalid && driverNumber.touched"
+                   #driverNumber="ngModel" />
+            <div *ngIf="driverNumber.errors && (driverNumber.touched && driverNumber.invalid)">
+              <small class="text-danger" *ngIf="driverNumber?.errors.required">Driver Number is
+                required</small>
+              <small class="text-danger" *ngIf="driverNumber?.errors.pattern">Please provide a
+                phone number</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="Email">What's the Driver's Email?</label>
+            <input  placeholder="driver@email.com" ngModel id="email" name="email"
+                   email="true" [class.is_invalid]="email.invalid && email.touched"
+                   #email="ngModel" />
+            <div *ngIf="email.errors && (email.touched && email.invalid)">
+              <small class="text-danger" *ngIf="email?.errors.email">Please provide a valid email</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="driverPhoneNo">What's the Driver's Phone Number?</label>
+            <input required ngModel placeholder="08283849383" id="driverPhoneNo"
+                   name="driverPhoneNo" pattern="^[0-9\s,+-]+$"
+                   [class.is_invalid]="driverPhoneNo.invalid && driverPhoneNo.touched"
+                   #driverPhoneNo="ngModel" />
+            <div *ngIf="driverPhoneNo.errors && (driverPhoneNo.touched && driverPhoneNo.invalid)">
+              <small class="text-danger" *ngIf="driverPhoneNo?.errors.required">Driver's Phone Number is
+                required</small>
+              <small class="text-danger" *ngIf="driverPhoneNo?.errors.pattern">Please provide a valid Driver's Phone
+                Number</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="loading || addForm.invalid">
+        <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+        &nbsp;
+        <span>SAVE</span>
+      </button>
+    </form>
+  </div>
+
+</div>

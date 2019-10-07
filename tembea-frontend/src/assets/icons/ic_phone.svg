@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Phone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web-App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cabs-&gt;-Pending-Requests" transform="translate(-331.000000, -170.000000)">
+            <g id="Group-2" transform="translate(306.000000, 116.000000)">
+                <g id="Cab-card">
+                    <g id="Reg" transform="translate(25.000000, 54.000000)">
+                        <g id="Phone">
+                            <circle id="Oval" fill-opacity="0.471325861" fill="#E0E8EA" cx="12" cy="12" r="12"></circle>
+                            <path d="M14.2751149,16.9671245 C15.1028933,17.2627376 15.994819,15.4754939 16,15.1759848 C16.0089378,14.6651585 14.6107437,13.0841751 14.405986,13.2078747 C14.0838299,13.4024481 13.1381502,13.7598389 12.9731491,13.7078758 C12.3662994,13.5164786 10.79003,10.4448789 10.9461673,9.7578093 C10.9885056,9.57117461 11.7366113,8.8283901 12.047351,8.6118766 C12.2450579,8.47417428 11.7271197,6.32145326 11.3293955,6.07462834 C11.096278,5.929998 9.2745731,5.90531551 9.0882816,6.85970562 C8.44615056,10.1488307 11.4222805,15.9482082 14.2751149,16.9671233 L14.2751149,16.9671245 Z" id="Path" fill="#CBD5DC"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,175 @@
+defaults: &defaults
+  docker:
+    - image: circleci/node:carbon
+      environment:
+        NODE_ENV: test
+  working_directory: ~/tembea-frontend
+
+cmd_attach_workspace: &cmd_attach_workspace
+  attach_workspace:
+    at: ~/tembea-frontend
+
+cmd_install_packages: &cmd_install_packages
+  run:
+    name: Install project dependencies
+    command: yarn install
+
+cmd_restore_cache: &cmd_restore_cache
+  restore_cache:
+    keys:
+      - yarn-packages-{{ checksum "yarn.lock" }}
+
+cmd_save_cache: &cmd_save_cache
+  save_cache:
+    key: yarn-packages-{{ checksum "yarn.lock" }}
+    paths:
+      - ~/.cache/yarn
+      - node_modules
+
+cmd_login_gcp: &cmd_login_gcp
+  run:
+    name: login into GCP
+    command: |
+      echo "Service account"
+      echo ${SERVICE_ACCOUNT}
+      echo "GCP Project ID"
+      echo $GCP_PROJECT_ID
+      chmod +x .circleci/gcp_login.sh
+      .circleci/gcp_login.sh main
+
+cmd_build_and_push_docker: &cmd_build_and_push_docker
+  run:
+    name: build image
+    command: |
+      export IMG_TAG=$(echo $CIRCLE_SHA1 | cut -c -7)
+      echo $IMG_TAG
+      docker login -u _json_key -p "$(echo $SERVICE_ACCOUNT)" https://gcr.io
+      if [ "${CIRCLE_BRANCH}" = "master" ]; then
+        export NODE_ENV="production"
+        docker build --build-arg NODE_ENV=${NODE_ENV} -t gcr.io/${GCP_PROJECT_ID}/${PROJECT_NAME}:${IMG_TAG} -f docker/release/Dockerfile .
+      elif [[ "${CIRCLE_BRANCH}" = "develop" || "${CIRCLE_BRANCH}" =~ "deployment" ]]; then
+        export NODE_ENV="staging"
+        docker build --build-arg NODE_ENV=${NODE_ENV} -t gcr.io/${GCP_PROJECT_ID}/${PROJECT_NAME}:${IMG_TAG} -f docker/release/Dockerfile .
+      fi
+      docker push gcr.io/${GCP_PROJECT_ID}/${PROJECT_NAME}:${IMG_TAG}
+
+filters: &filters
+  filters:
+    branches:
+      only:
+        - /^(.*?(\bcircleci\b)[^$]*)$/
+        - develop
+        - master
+
+persist_to_workspace: &persist_to_workspace
+  persist_to_workspace:
+    root: .
+    paths: .
+
+version: 2
+jobs:
+  checkout_code:
+    <<: *defaults
+    steps:
+      - checkout
+      - *cmd_restore_cache
+      - *cmd_install_packages
+      - *cmd_save_cache
+      - *persist_to_workspace
+
+  test_and_report:
+    <<: *defaults
+    steps:
+      - *cmd_attach_workspace
+      - *cmd_install_packages
+      - run:
+          name: Install code climate test reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+
+      - run:
+          name: Run tests
+          command: |
+            ./cc-test-reporter before-build     # https://github.com/codeclimate/test-reporter/issues/260#issuecomment-369783913
+            yarn test --coverage
+            ./cc-test-reporter after-build --exit-code $?
+      - *persist_to_workspace
+
+  build_artifacts:
+    <<: *defaults
+    steps:
+      - *cmd_attach_workspace
+      - *cmd_install_packages
+      - run: yarn build
+      - *persist_to_workspace
+
+  docker_and_deploy:
+    docker:
+      - image: gcr.io/$GCP_PROJECT_ID/tembea-ci-image
+        auth:
+          username: _json_key
+          password: $SERVICE_ACCOUNT
+        environment:
+          GOOGLE_APPLICATION_CREDENTIALS: /root/tembea-frontend/shared/account.json
+
+    working_directory: ~/tembea-frontend
+    <<: *defaults
+    steps:
+      - checkout
+      - setup_remote_docker
+      - *cmd_attach_workspace
+      - *cmd_login_gcp
+      - *cmd_build_and_push_docker
+      - run:
+          name: Clone the deployment scripts repo
+          command: |
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            echo ${DEPLOYMENT_SCRIPTS_REPO}
+            if [ "${CIRCLE_BRANCH}" = "master" ]; then
+              git clone -b master ${DEPLOYMENT_SCRIPTS_REPO}
+            elif [ "${CIRCLE_BRANCH}" = "develop" ]; then
+              git clone -b develop ${DEPLOYMENT_SCRIPTS_REPO}
+            fi
+      - deploy:
+          name: Run K8s configurations to deploy the app
+          command: |
+            cd tembea-deployment-scripts/ansible/frontend
+            export IMG_TAG=$(echo $CIRCLE_SHA1 | cut -c -7)
+            if [ "${CIRCLE_BRANCH}" = "master" ]; then
+              export NAMESPACE="production"
+              echo ${PROD_CLUSTER_NAME}
+              export NODE_ENV=${NAMESPACE}
+              ansible-playbook playbook.yml --extra-vars "@prod-vars.yml" -vvv
+            elif [ "${CIRCLE_BRANCH}" = "develop" ]; then
+              export NAMESPACE="staging"
+              echo ${STAGING_CLUSTER_NAME}
+              export NODE_ENV=${NAMESPACE}
+              ansible-playbook playbook.yml --extra-vars "@dev-vars.yml" -vvv
+            fi
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - checkout_code
+      - test_and_report:
+          requires:
+            - checkout_code
+      - build_artifacts:
+          requires:
+            - checkout_code
+            - test_and_report
+          <<: *filters
+      - approve_deployment:
+          type: approval
+          requires:
+            - build_artifacts
+          <<: *filters
+      - docker_and_deploy:
+          requires:
+            - approve_deployment
+            - checkout_code
+            - test_and_report
+            - build_artifacts
+          <<: *filters

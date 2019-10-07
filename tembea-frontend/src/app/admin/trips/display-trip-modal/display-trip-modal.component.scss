@@ -1,0 +1,100 @@
+::ng-deep .mat-dialog-container {
+  border-radius: 11px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 12px 0 rgba(83, 89, 98, 0.12);
+}
+.display-trip-modal {
+  border-radius: 13px;
+  .display-modal-title {
+    text-align: center;
+  }
+
+  .display-trip-details {
+    display: flex;
+    justify-content: space-between;
+    .trip-user-details {
+      padding: 0.1rem 0.6rem;
+      border-radius: 4px;
+      background-color: rgba(224, 232, 234, 0.47);
+      width: 45%;
+      height: 220px;
+      .rider-info {
+        font-weight: bold;
+      }
+    }
+
+    .trip-date {
+      padding: 0.1rem 0.6rem;
+      border-radius: 4px;
+      background-color: rgba(224, 232, 234, 0.47);
+      width: 45%;
+      height: 220px;
+      .trip-date-text {
+        font-weight: bold;
+      }
+    }
+    .trip-details {
+      padding: 0.1rem 0.6rem;
+      border-radius: 4px;
+      background-color: rgba(224, 232, 234, 0.47);
+      margin-top: 1rem;
+      width: 45%;
+      height: 220px;
+      .trip-details-text {
+        font-weight: bold;
+      }
+
+    }
+    .trip-status {
+      padding: 0.1rem 0.6rem;
+      border-radius: 4px;
+      background-color: rgba(224, 232, 234, 0.47);
+      margin-top: 1rem;
+      width: 45%;
+      height: 220px;
+      .trip-status-text {
+        font-weight: bold;
+      }
+
+    }
+  }
+  .display-modal-action {
+    background-color: red;
+    background: url(../../../../assets/images/san-francisco.png) no-repeat;
+    background-size: 592px 137px;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+
+  hr {
+    opacity: 0.08;
+  }
+
+  .close {
+    background-color: #3359DB;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+  @media all and (max-width: 752px) {
+    .display-trip-details {
+      flex-wrap: wrap;
+
+      .trip-user-details,
+      .trip-details,
+      .trip-date,
+      .trip-status {
+        width: 100%;
+      }
+      .trip-date {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

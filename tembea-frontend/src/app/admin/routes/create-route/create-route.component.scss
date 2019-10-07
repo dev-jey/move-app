@@ -1,0 +1,216 @@
+@import "../../../../assets/styles/mixins";
+
+.create-route-section {
+  display: flex;
+
+  .form-subsection {
+    flex: 1;
+    padding-right: 50px;
+    box-sizing: border-box;
+    .welcome-text {}
+    .create-route-form-wrapper {
+      .create-route-form {
+        font-size: 16px;
+        .label-input-wrapper {
+          position: relative;
+          margin-top: 20px;
+          label {
+            display: block;
+            margin-bottom: 10px;
+          }
+          em {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: red;
+            font-size: 13px;
+          }
+          input {
+            display: block;
+            border-radius: 4px;
+            border: 1px solid #E9EFF4;
+            height: 40px;
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+            @include placeholder {
+              color: #E0E8EA;
+            }
+          }
+          .search-button {
+            @include input-button-wrapper;
+            box-sizing: border-box;
+            padding: 3px;
+            button {
+              background-color: white;
+              border: none;
+              width: 100%;
+              height: 100%;
+              padding: 0;
+              cursor: pointer;
+              &:focus {
+                outline: 1px solid #3359DB20;
+              }
+              .search-icon {
+                background-image: url("/assets/images/icons/search-icon.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 60%;
+                height: 60%;
+                margin: auto;
+                padding: 3px;
+              }
+            }
+          }
+          .change-value-button {
+            @include input-button-wrapper;
+            border-left: 1px solid #E9EFF4;
+            text-align: center;
+            #increment {
+              display: block;
+              background-color: transparent;
+              width: 100%;
+              height: 50%;
+              margin: auto;
+              color: #84878c;
+              padding: 0;
+              border: none;
+              border-bottom: 1px solid #E9EFF4;
+              border-top-right-radius: 4px;
+              cursor: pointer;
+              &:active:hover {
+                background-color: #3359DB;
+                color: white;
+              }
+              .increment-icon {
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 10px;
+                height: 12px;
+                margin: auto;
+              }
+            }
+            #decrement {
+              display: block;
+              width: 100%;
+              height: 50%;
+              margin: auto;
+              padding: 0;
+              color: #84878c;
+              border-bottom-right-radius: 4px;
+              cursor: pointer;
+              &:active:hover {
+                background-color: #3359DB;
+                color: white;
+              }
+              .decrement-icon {
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 10px;
+                height: 9px;
+                margin: auto;
+              }
+            }
+          }
+        }
+        .button-wrapper {
+          margin: 30px auto;
+          button {
+            background-color: #3359DB;
+            border-radius: 4px;
+            color: #FFFFFF;
+            height: 40px;
+            width: 100%;
+            padding: 0;
+            cursor: pointer;
+            &:disabled {
+              background-color: #80808060;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+  }
+  .map-subsection {
+    flex: 1;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+    .map-wrapper {
+      height: 100%;
+      agm-map {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .welcome-text {
+    text-align: center;
+  }
+  .create-route-section {
+    display: block;
+    width: 400px;
+    margin: auto;
+    .form-subsection {
+      padding-right: 0;
+    }
+    .map-subsection {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .create-route-section {
+    width: 100%;
+  }
+}
+
+// hide default scroll for input with number type
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.bottom-image{
+  background: url('../../../../assets/images/san-francisco.png');
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:192px;
+  background-size: 400px 250px;
+  background-repeat: repeat-x;
+  position: fixed;
+  z-index: -1;
+  padding: 20px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  width: 80%;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  background-color: #3359DB;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: white;
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 3px;
+}
+
+

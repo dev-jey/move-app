@@ -1,0 +1,57 @@
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background:  #FFFFFF;
+  background-image: none;
+}
+
+.select-style {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  width: 13em;
+  height: 2.8em;
+  line-height: 3;
+  border: 1px solid #e9eff4;
+  background: #FFFFFF;
+  overflow: hidden;
+  border-radius: 5px;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #929FB0;
+  text-indent: 5px;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.select-style::after {
+  content: '\2335';
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.1em;
+  color: #929FB0;
+  background: rgba(251, 252, 253, 9.49);
+  border-left: 1px solid #e9eff4 ;
+  pointer-events: none;
+
+}
+.select-style::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}

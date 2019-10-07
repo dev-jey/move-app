@@ -1,0 +1,22 @@
+.trip-departure-time {
+  color: #808FA3;
+}
+
+.trip-table-head,
+.trip-table-body {
+  overflow     : hidden;
+  border-right : 1px solid rgba(0, 0, 0, 0.05);
+  border-left  : 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.time-departure-date,
+.center {
+  text-align: center;
+}
+
+.mat-grid-tile, .table-row-item, 
+.trip-table-head.mad-grid-tile, .trip-table-head  {
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+}

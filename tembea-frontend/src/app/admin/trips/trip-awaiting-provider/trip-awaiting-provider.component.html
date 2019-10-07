@@ -1,0 +1,99 @@
+<div *ngIf="tripRequests.length === 0">
+  <app-empty-page [text]="'No Trips Awaiting Providers'"></app-empty-page>
+  <div class="bottom-image"></div>
+</div>
+
+<div *ngIf="tripRequests.length > 0">
+  <div class="buttons-wrapper flex">
+    <button class="search-wrapper"></button>
+    <app-export-view 
+      [tableName]="'awaitingProvider'"
+      class="flex-right"
+      (click)="setFilterParams()"
+      [filterParams]="filterParams"
+      >
+    </app-export-view>
+  </div>
+</div>
+
+<div *ngIf="tripRequests.length > 0" class="trips-container">
+  <div class="trips-table custom-table">
+    <mat-grid-list cols="8" rowHeight="4:1" class="trip-table-head table-header-hover">
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Pickup Location</div>
+      </mat-grid-tile>
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Pickup Time</div>
+      </mat-grid-tile>
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Destination</div>
+      </mat-grid-tile>
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Provider Name</div>
+      </mat-grid-tile>
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Provider Phone No.</div>
+      </mat-grid-tile>
+      <mat-grid-tile tabindex="0">
+        <div class="trip-align-cell">Rider</div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">Approval Date</div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="actions-icon trip-align-cell">Actions</div>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list *ngFor='let trip of tripRequests' class="trip-table-body table-row-item mat-grid-list ng-star-inserted" cols="8"
+      rowHeight="4:1">
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          <span>{{ trip.pickup | shortenText }}</span>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="time trip-align-cell">
+          <span class="time-departure-date">{{ trip.departureTime | date: 'dd-MM-yyyy' }} 
+            <br />
+            <span class="trip-departure-time">by {{ trip.departureTime | date: 'shortTime' }}</span>
+          </span>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          {{ trip.destination }}
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          {{ trip.provider.name }}
+        </div>
+    </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          {{ trip.provider.phoneNumber }}
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          <span>{{ trip.rider.name | shortenName: { max: 10 } }}</span>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          <span>{{ trip.approvalDate | date: 'dd-MM-yyyy' }}</span>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="trip-align-cell">
+          <!-- Action widgets will go in here -->
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="pagination">
+    <app-pagination *ngIf='totalItems > pageSize' [totalItems]="totalItems" (pageChange)="updatePage($event)"
+      [pageSize]="pageSize"></app-pagination>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+.fellow-card {
+  border: 1px solid #F1F3F5;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(57,67,77,0.08);
+  box-sizing: border-box;
+  min-height: 211px;
+  width: 324px;
+
+  @media screen and (min-width: 1240px) and (max-width: 1340px)
+  {
+    width: auto;
+    max-height: 130px;
+    max-width: 258px;
+  }
+
+  &__modal {
+    @media screen and (min-width: 1240px) and (max-width: 1340px)
+      {
+        max-height: 130px;
+        max-width: 258px;
+      }
+  }
+}
+
+.fellow-card__avatar--image {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+.fellow-card__header {
+  align-items: center;
+  padding: 18px 22.5px;
+  display: flex;
+}
+
+.fellow-card__body {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: auto 30px 25px;
+}
+
+.fellow-card__detail {
+  width: 115px;
+}
+
+.fellow-card__detail--title {
+  color: #808FA3;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.fellow-card__detail--text {
+  color: #39434D;
+  font-size: 14px;
+  margin: 2px auto 8px;
+}
+
+.a-link{
+  text-decoration: none;
+  color: #4F4F4F;
+}
+
+.fellow-card__fellow-name {
+  color: #39434D;
+  flex-grow: 1;
+  font-weight: bold;
+  line-height: 21px;
+  padding: 0 15px;
+}
+
+.fellow-card:hover {
+  animation-name: fellow-hover;
+  animation-duration: 0.25s;
+  box-shadow: 0 7px 44px 0 rgba(0,0,0,0.04);
+}
+
+.remove-action-button {
+  border: none;
+
+  .remove-icon {
+    background-color: #fff;
+    border: #fff;
+    background-image: url("/assets/images/icons/decline-icon.svg");
+    height: 19px;
+    width: 19px;
+    display: inline-block;
+  }
+}
+
+.add-action-button {
+  border: none;
+
+  .add-icon {
+    background-color: #fff;
+    border: #fff;
+    background-image: url("/assets/images/icons/ic_confirm.svg");
+    height: 19px;
+    width: 19px;
+    display: inline-block;
+  }
+}
+
+@keyframes fellow-hover {
+  0%   {border: 1px solid #C8C8C8;}
+  60% {border: 1px solid #F8F8F8;}
+  100% {border: 1px solid white;}
+}
+
+

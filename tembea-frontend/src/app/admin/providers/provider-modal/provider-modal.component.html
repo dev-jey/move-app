@@ -1,0 +1,57 @@
+<div class="add-department-modal">
+  <div class="modal-header">
+    <button class="close-button button-hover" (click)="closeDialog()">
+      &#x2715;
+    </button>
+  </div>
+  <div class=form-container>
+    <form #providerForm="ngForm" (ngSubmit)="editProvider(providerForm, data.id)">
+      <span class="modal-title">Edit Provider</span>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="name">What's the new name?</label>
+            <input
+              required
+              id="name"
+              name="name"
+              pattern="^[a-zA-Z0-9\s,+-]+$"
+              [(ngModel)]="data.name"
+              #name=ngModel
+             />
+          </div>
+          <div *ngIf="name.errors && (name.touched && name.invalid)">
+            <small class="text-danger" *ngIf="name?.errors.required">Name field is required</small>
+            <small class="text-danger" *ngIf="name?.errors.pattern">Please provide a valid department name</small>
+          </div>
+        </div>
+      </div>
+      <div class="single-field">
+        <div class="field single">
+          <div class="input-group">
+            <label for="email">What's the new email?</label>
+            <input
+              required
+              id="email"
+              name="email"
+              type="email"
+              [(ngModel)]="data.email"
+              #email=ngModel
+              email
+            />
+          </div>
+          <div *ngIf="email.errors && (email.touched && email.invalid)">
+            <small class="text-danger" *ngIf="email?.errors.required">Email field is required</small>
+            <small class="text-danger" *ngIf="email?.errors.email">Email is invalid</small>
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        [disabled]="loading || providerForm.invalid">
+        <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+        <span>Submit</span>
+      </button>
+    </form>
+  </div>
+</div>

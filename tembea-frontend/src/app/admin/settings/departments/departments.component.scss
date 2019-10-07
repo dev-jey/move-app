@@ -1,0 +1,60 @@
+.departments-table {
+  width: 100%;
+  margin-bottom: 2rem;
+  .mat-grid-tile .mat-figure{
+    justify-content: start;
+  }
+  .department-align-cell{
+    position: absolute;
+    left: 30px;
+  }
+}
+
+mat-icon {
+  color: white;
+}
+.buttons-wrapper{
+  width: 100%;
+  margin-left: 0rem;
+}
+.pagination{
+  padding-bottom: 2rem;
+}
+
+/* Mobile in portrait and landscape mode*/
+@media all and (max-width: 752px) {
+  .buttons-wrapper{
+    margin: 0rem auto 1rem;
+  }
+  .departments-container{
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .departments-table{
+    margin: 0 auto;
+    width: 600px;
+  }
+  mat-grid-list {
+    height: 15px;
+    padding: 10px;
+  }
+  mat-grid-tile{
+    padding: 1.5rem 0rem;
+  }
+  .nav-buttons {
+    margin-top: 1rem;
+  }
+}
+
+.fab {
+  position: fixed;
+  z-index: 1000;
+  background-color: #3359DB;
+  bottom: 0;
+  right: 0;
+  margin: 0 2em 2em 0;
+}
+
+.pagination {
+  margin-right: 3em;
+}

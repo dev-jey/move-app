@@ -1,0 +1,105 @@
+<div>
+  <div class="loader" *ngIf="isLoading === true"></div>
+
+  <div *ngIf="totalItems === 0  && !isLoading">
+    <app-empty-page [text]='displayText'></app-empty-page>
+    <div class="bottom-image"></div>
+  </div>
+
+    <div *ngIf="totalItems > 0">
+        <div class="remove_fellow" *ngIf="routeBatchId !== null">
+            <p>Remove {{firstName}}</p>
+        </div>
+        <div class="add_fellow" *ngIf="routeBatchId === null">
+            <p>Add {{firstName}}</p>
+        </div>
+        <div class="details_card">
+            <div class="trips-average-card">
+                <div class="left-details">
+                    <ul>
+                        <li>No of trips</li>
+                        <li>Average rating</li>
+                        <li>Cost total</li>
+                    </ul>
+                </div>
+
+                <div class="right-details">
+                    <ul>
+                        <li>{{totalItems}}</li>
+                        <li> - </li>
+                        <li> - </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-right">
+        <app-export-view [tableName]="'fellow Route Details'" [sort]="sort" class="flex-right">
+        </app-export-view>
+        </div>
+
+        <div class="fellows-table-container table">
+
+            <div class="fellows-table custom-table">
+                <mat-grid-list class="table-header-hover" cols="6" rowHeight="3:1">
+                    <mat-grid-tile>
+                        <div class="cell-align">Departed on</div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="cell-align">Route Name</div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="cell-align">Destination</div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="cell-align">Driver</div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="cell-align">Rating</div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div class="cell-align">Status</div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+
+                    <mat-grid-list *ngFor="let fellow of fellowsData" cols="6" rowHeight="3:1" class="table-row-item">
+                        <mat-grid-tile>
+                            <div class="time cell-align">
+                                <span>{{ fellow.departureDate | date:'dd-MM-yy' }}</span>
+                                <span>
+                                <span>&nbsp;by&nbsp;</span>
+                                <span>{{ fellow.departureDate | date:'shortTime' }}</span>
+                                </span>
+                            </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <p class="cell-align">{{ fellow.name }}</p>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <p class="cell-align">{{ fellow.address }}</p>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <p class="cell-align">{{ fellow.driverName }}</p>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <div class="cell-align">
+                                <app-rating-stars [rating]="fellow.rating" ></app-rating-stars>
+                            </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <div class="cell-align">{{ fellow.userAttendStatus }}</div>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <app-pagination
+                *ngIf='totalItems > pageSize'
+                [totalItems]="totalItems"
+                (pageChange)="setPage($event)"
+                [pageSize]="pageSize">
+            </app-pagination>
+        </div>
+    </div>
+</div>

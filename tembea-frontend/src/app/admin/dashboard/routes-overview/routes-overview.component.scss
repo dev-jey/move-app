@@ -1,0 +1,54 @@
+.mat-card {
+	height: 254px;
+	width: 244px;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+    padding: 25px 35px 36px 32px;
+}
+
+.mat-card-title {
+	height: 21px;
+	color: #333E44;
+	font-family: "DIN Pro";
+	font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    margin-bottom: 23px;
+}
+
+.mat-card-content {
+    background-image: url('../../../../assets/images/dashboard/routes-overview.png');
+    height: 149px;
+	width: 177px;
+	border: 1px solid #E0E8EA;
+	border-radius: 13px;
+    background-color: rgba(224,232,234,0.18);
+    background-position: center;
+    background-size: cover;
+    padding: 31px 37px 38px 38px;
+    text-align: center;
+    #route_name {
+        color: #39434D;
+        font-family: "DIN Pro";
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -1.1px;
+        line-height: 31px;
+        margin: 23px auto;
+    }
+    #route_use {
+        color: #39434D;
+        font-family: "DIN Pro";
+        font-size: 20px;
+        line-height: 26px;
+        display: block;
+    }
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

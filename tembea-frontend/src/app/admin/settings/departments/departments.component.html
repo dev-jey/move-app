@@ -1,0 +1,92 @@
+<div>
+  <div class="loader" *ngIf="isLoading === true"></div>
+  <div *ngIf="departments.length === 0 && !isLoading">
+    <app-empty-page [text]='displayText'></app-empty-page>
+    <div class="bottom-image"></div>
+  </div>
+  <div *ngIf="departments.length > 0">
+    <div class="buttons-wrapper flex">
+      <button aria-label="Search Departments" class="search-wrapper"></button>
+      <app-export-view
+        [tableName]="'departments'"
+        class="flex-right">
+      </app-export-view>
+    </div>
+    <div class="departments-container">
+      <div class="departments-table custom-table">
+        <mat-grid-list role="list" cols="5" rowHeight="3:1" class="table-header table-header-hover">
+          <mat-grid-tile tabindex="0">
+            <div class="department-align-cell">Department</div>
+          </mat-grid-tile>
+          <mat-grid-tile tabindex="0">Location</mat-grid-tile>
+          <mat-grid-tile tabindex="0">
+            <div class="department-align-cell">Lead</div>
+          </mat-grid-tile>
+          <mat-grid-tile tabindex="0">Status</mat-grid-tile>
+          <mat-grid-tile tabindex="0">Actions
+            <div class="actions-icon"></div>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list *ngFor='let department of departments' cols="5" rowHeight="3:1" class="table-row-item">
+            <mat-grid-tile tabindex="0">
+              <div class="department-align-cell">{{ department.name }}</div>
+            </mat-grid-tile>
+            <mat-grid-tile tabindex="0">
+              {{ department.location }}
+            </mat-grid-tile>
+            <mat-grid-tile tabindex="0">
+              <div class="department-align-cell">{{ department['head.name']}}</div>
+            </mat-grid-tile>
+            <mat-grid-tile *ngIf='department.status === "Active" ; else inactive'>
+              <button class="active-status-button">
+                <div class="green-radio-wrapper">
+                  <div class="green-radio">
+                  </div>
+                </div>
+                <div class="status-active">active</div>
+              </button>
+            </mat-grid-tile>
+            <ng-template #inactive>
+              <mat-grid-tile>
+                <button class="inactive-status-button">
+                  <div class="white-radio-wrapper">
+                    <div class="white-radio">
+                    </div>
+                  </div>
+                  <div class="status-inactive">inactive</div>
+                </button>
+              </mat-grid-tile>
+            </ng-template>
+            <mat-grid-tile>
+              <div class="flex">
+                <button aria-label="Edit" class='edit-action-button'>
+                  <span class="edit-icon tooltip" (click)="editDepartment(department, department.name)">
+                    <span class="show-on-right">Edit<i></i></span>
+                  </span>
+                </button>
+                <button aria-label="Copy" class='duplicate-action-button'>
+                  <span class="duplicate-icon tooltip">
+                    <span class="show-on-left">Copy<i></i></span>
+                  </span>
+                </button>
+                <button aria-label="Delete" class='decline-action-button'>
+                  <span class="decline-icon tooltip" (click)="showDeleteModal(department.id, department.name)">
+                    <span class="show-on-left">Delete<i></i></span>
+                  </span>
+                </button>
+              </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <div class="pagination">
+        <app-pagination *ngIf='totalItems > pageSize' [totalItems]="totalItems" (pageChange)="setPage($event)"
+                        [pageSize]="pageSize"></app-pagination>
+      </div>
+
+    </div>
+  </div>
+  <button mat-fab class="fab" (click)="addDepartment()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

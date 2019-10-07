@@ -1,0 +1,87 @@
+mat-sidenav-container, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav-content{
+  background: #ffffff;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+}
+
+mat-icon.logo {
+  height: 35px;
+  width: 100%;
+  padding-right: 55px;
+}
+
+mat-toolbar {
+  margin-top: 1em;
+  background: transparent;
+  padding-bottom: 15%;
+}
+
+mat-sidenav-content > .mat-sidenav-content-div{
+  padding: 1em 3em 0 3em;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+mat-expansion-panel,
+mat-expansion-panel-header {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+mat-nav-list {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.is-active{
+  font-weight: bolder;
+}
+
+.chevron {
+  margin: auto;
+}
+
+.svg-icon{
+  margin-right: .5em;
+}
+
+.nav-section mat-nav-list{
+  margin-left: 1em;
+}
+
+.san-fransisco {
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+a:hover {
+  background-color: transparent !important;
+}
+
+.logout-divider {
+  margin: 0.5em auto;
+}
+
+mat-icon.logout-icon{
+  margin-right:0.5em;
+  color: #FF5359;
+}
+
+@media screen and (max-width: 500px) {
+  mat-sidenav-content > .mat-sidenav-content-div{
+    padding: 1em 1em 0 1em;
+    box-sizing: border-box;
+  }
+}

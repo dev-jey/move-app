@@ -1,0 +1,11 @@
+.stars-container {
+  img {
+    padding-right: 3px;
+    width: 1rem;
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 2px;
+      width: 0.75rem;
+    }
+  }
+}

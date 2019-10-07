@@ -1,0 +1,46 @@
+<div class="display-trip-modal">
+  <h2 mat-dialog-title class="display-modal-title">Trip Description</h2>
+  <mat-dialog-content>
+    <div class="display-trip-details">
+      <div class="trip-user-details">
+        <h3 class="rider-info">Rider Information</h3>
+        <hr />
+        <p><span class="bold-text">Department: </span>{{tripInfo.department}}</p>
+        <p><span class="bold-text">Requested By: </span> {{tripInfo.requester.name }} </p>
+        <p><span class="bold-text">Rider: </span> {{tripInfo.rider.name}}</p>
+      </div>
+      <div class="trip-date">
+        <h3 class="trip-date-text">Provider Details</h3>
+        <hr />
+        <p><span class="bold-text">Name: </span> {{ tripInfo.provider.name | convertNullValue: 'NA' | shortenName: { max: 15 } }}</p>
+        <p><span class="bold-text">Driver's Name: </span> {{ tripInfo.driver?.driverName | convertNullValue: 'NA' }}</p>
+        <p><span class="bold-text">Vehicle model: </span> {{ tripInfo.cab?.model | convertNullValue: 'NA' }}</p>
+        <p><span class="bold-text">Vehicle Number: </span> {{ tripInfo.cab?.regNumber | convertNullValue: 'NA' }}</p>
+
+        
+      </div>
+
+    </div>
+    <div class="display-trip-details">
+      <div class="trip-details">
+        <h3 class="trip-details-text">Trip Details</h3>
+        <hr />
+        <p><span class="bold-text">Pickup: </span> {{tripInfo.pickup}}</p>
+        <p><span class="bold-text">Destination: </span> {{tripInfo.destination}}</p>
+        <p><span class="bold-text">Requested On: </span> {{ tripInfo.requestedOn | date:'dd-MM-yy' }}</p>
+        <p><span class="bold-text">Departing On: </span> {{ tripInfo.departureTime | date:'dd-MM-yy' }}</p>
+        <p *ngIf="!!tripInfo.distance"><span class="bold-text">Distance: </span> {{tripInfo.distance}}</p>
+      </div>
+      <div class="trip-status">
+        <h3 class="trip-status-text">Trip Status</h3>
+        <hr />
+        <p><span class="bold-text">Status: </span> {{tripInfo.status}}</p>
+        <p *ngIf="!!tripInfo.operationsComment"><span class="bold-text">Reason for Decline(Ops): 
+         </span> {{tripInfo.operationsComment}}</p>
+      </div>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions class="display-modal-action">
+    <button class="close" mat-button [mat-dialog-close]="true">{{closeText}}</button>
+  </mat-dialog-actions>
+</div>

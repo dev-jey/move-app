@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>close modal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="close-modal">
+            <g>
+                <circle id="Oval" fill="#E0E8EA" cx="14.5" cy="14.5" r="14.5"></circle>
+                <path d="M10.7675926,18.2179487 L19.037963,10.7820513" id="Line" stroke="#808FA3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.7675926,18.2179487 L19.037963,10.7820513" id="Line-Copy" stroke="#808FA3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.902778, 14.500000) scale(-1, 1) translate(-14.902778, -14.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

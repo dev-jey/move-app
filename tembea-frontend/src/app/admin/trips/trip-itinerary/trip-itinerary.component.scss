@@ -1,0 +1,116 @@
+.trip-itinerary-table{
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: auto;
+  display: block;
+}
+
+.trip-table-head {
+  color: #808FA3;
+  text-align: center;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.trip-buttons-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.trip-table-head p{
+  font-size: 14px;
+}
+.trip-table-body  {
+  cursor: pointer;
+  .mat-grid-tile {
+    font-size: 14px;
+    text-align: left;
+    justify-content: start;
+  }
+  text-align: left;
+}
+.top-filter{
+  padding-left: 10px;
+  display: grid;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  grid-template-columns: repeat(4, 250px);
+}
+.input-style {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  height: 38px;
+  width: 200px;
+  outline: none;
+  border-radius: 5px;
+  text-align: left;
+  text-indent: 10px;
+  border: 1px solid #e9eff4;
+  font-size: 14px;
+}
+
+
+.select-style {
+  position: relative;
+  float: left;
+  min-width: 200px;
+}
+
+.select-style:after {
+  content: '\f078';
+  font: normal normal normal 15px FontAwesome;
+  color: #e9eff4;
+  right: 17px;
+  height: 33px;
+  top: 10px;
+  padding: 10px 0px 0px 8px;
+  background-color: #ffffff;
+  position: absolute;
+  pointer-events: none;
+}
+.select-style:before {
+  content: '';
+  font: normal normal normal 15px FontAwesome;
+  color: #e9eff4;
+  right: 40px;
+  height: 33px;
+  top: 10px;
+  padding: 10px 0px 0px 8px;
+  border-left: 1px solid #e9eff4;
+  position: absolute;
+  pointer-events: none;
+}
+
+.trip-itinerary-approved{
+  width: 80px;
+  overflow-wrap: break-word;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.select-style select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: 44px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  background-image: none;
+  border: 1px solid #e9eff4;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+.mat-grid-tile, .table-row-item, 
+.trip-table-head.mad-grid-tile, .trip-table-head  {
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+}
